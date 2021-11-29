@@ -68,7 +68,7 @@ const Header = () => {
 
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }}>
+          {/* <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }}>
             <NavLink as={Link} to='/myProject' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
               My Project
             </NavLink>
@@ -81,7 +81,7 @@ const Header = () => {
             <NavLink to='about' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
               About
             </NavLink>
-          </Box>
+          </Box> */}
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

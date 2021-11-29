@@ -9,9 +9,9 @@ import {
 import Home from './pages/Home/Home/Home';
 import About from './pages/Home/About/About';
 import Header from './pages/Home/Header/Header';
-import ContactMe from './pages/Home/ContactMe/ContactMe';
 import Cover from './pages/Home/Cover/Cover';
 import Projects from './pages/Home/Projects/Projects';
+import ContactMe from './pages/Home/ContactMe/ContactMe';
 
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
           <Route path="about/*" element={<About />} />
           <Route path="cover/*" element={<Cover />} />
           {/* <Route path="myProject/*" element={<MyProject />} /> */}
-          <Route path="Projects/*" element={<Projects />} />
-          <Route path="ContactMe/*" element={<ContactMe />} />
+          <Route path="projects/*" element={<Projects />} />
+          <Route path="contactMe/*" element={<ContactMe />} />
 
         </Routes>
       </BrowserRouter>

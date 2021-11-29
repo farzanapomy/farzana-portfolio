@@ -3,6 +3,7 @@ import About from '../About/About';
 import Cover from '../Cover/Cover';
 import Projects from '../Projects/Projects';
 import MyProject from '../MyProjects/ProjectOne';
+import ContactMe from '../ContactMe/ContactMe';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             {/* <MyProject></MyProject> */}
             <Projects></Projects>
             <About></About>
+            <ContactMe></ContactMe>
         </div>
     );
 };
