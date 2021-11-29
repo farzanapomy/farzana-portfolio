@@ -5,14 +5,15 @@
 }
 
 .cover-role h1 {
+    color: tomato;
     font-size: 35px;
     font-family: cursive;
-    color: black;
-}
+ }
 .highlighted-text{
     color: thistle;
 }
 .cover-tagline{
+    color: white;
     font-size: 20px;
     margin: 5px 0px 0px 0px;
     font-family: poppins-light;
@@ -48,9 +49,12 @@
 }
 .cover-icons{
     color: white;
-    padding-right: 8px;
+    padding-right: 15px;
+}
+.cover-icons a{
+    padding: 15px;
+    margin-bottom: 15px;
 }
 .cover-icons i:hover{
     transform: scale(1.5);
-
 }

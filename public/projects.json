@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Food Lover",
+        "img": "https://i.ibb.co/qgfPs1Y/project1.png",
+        "description": "This project build on vanilla HTML and CSS"
+    },
+    {
+        "id": 2,
+        "name": "Play With Football",
+        "img": "https://i.ibb.co/0Gzk4JS/project2.png",
+        "description": "This project build on vanilla HTML and CSS"
+    },
+    {
+        "id": 3,
+        "name": "Home Decor Course",
+        "img": "https://i.ibb.co/6RVbx0p/project3-1.png",
+        "description": "This project build on vanilla HTML and CSS"
+    }
+]

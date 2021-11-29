@@ -1,51 +1,89 @@
-import React from 'react';
-import Grid from '@mui/material/Grid';
-import './Projects.css'
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link
-} from "react-router-dom";
-import ProjectOne from '../MyProjects/ProjectOne';
-import ProjectTwo from '../MyProjects/ProjectTwo';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import { alpha } from '@mui/material/styles';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
+import { Container } from '@mui/material';
 
-const Projects = () => {
-
-
+export default function Project() {
+    const [projects, setProjects] = React.useState([]);
+    React.useEffect(() => {
+        fetch('/projects.json')
+            .then(res => res.json())
+            .then(data => setProjects(data))
+    }, [])
     return (
-        <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
-                <h5 style={{ margin: "15px", padding: "15px", textDecoration: "" }}>My Projects</h5>
+        <Container>
+            {projects.map(project =>
+                <Box
+                    key={project.id}
+                >
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: { xs: 'column', md: 'row' },
+                            alignItems: 'center',
+                            bgcolor: 'black',
+                            overflow: 'hidden',
+                            borderRadius: '12px',
+                            boxShadow: 1,
+                            fontWeight: 'bold',
+                            m: 1
+                        }}
+                    >
+                        <Box
+                            component="img"
+                            sx={{
+                                height: '100%',
+                                width: 350,
+                                p: 1,
+                                // maxHeight: { xs: 233, md: 167 },
+                                maxWidth: { xs: 350, md: 250 },
+                            }}
+                            // alt="The house from the offer."
+                            src={project.img}
+                        />
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: { xs: 'center', md: 'flex-start' },
+                                m: 3,
+                                minWidth: { md: 350 },
+                            }}
+                        >
 
-               
-                <Link to='/projectOne'>
-                    <p className="dashboard-menu mt-5">First Project</p>
-                </Link>
-                <Link to='/projectTwo'>
-                    <p className="dashboard-menu mt-5">Second Project</p>
-                </Link>
-               
+                            <Box component="span" sx={{ fontSize: 16, mt: 1 }}>
+                                123 Main St, Phoenix AZ
+                            </Box>
+                            <Box component="span" sx={{ color: 'primary.main', fontSize: 22 }}>
+                                $280,000 — $310,000
+                            </Box>
+                            <Box
+                                sx={{
+                                    mt: 1.5,
+                                    p: 0.5,
+                                    backgroundColor: (theme) => alpha(theme.palette.primary.main, 0.1),
+                                    borderRadius: '5px',
+                                    color: 'primary.main',
+                                    fontWeight: 'medium',
+                                    display: 'flex',
+                                    fontSize: 12,
+                                    alignItems: 'center',
+                                    '& svg': {
+                                        fontSize: 21,
+                                        mr: 0.5,
+                                    },
+                                }}
+                            >
+                                <ErrorOutlineIcon />
+                                CONFIDENCE SCORE 85%
+                            </Box>
+                        </Box>
+                    </Box>
 
+                </Box>
+            )}
 
-
-            </Grid>
-
-            <Grid item xs={12} md={6}>
-                
-                    <Routes>
-                        <Route path="/" element={<ProjectOne />} />
-                        <Route path="/projectTwo" element={<ProjectTwo />} />
-                    </Routes>
-
-
-             
-               
-            </Grid>
-
-        </Grid >
-
+        </Container>
     );
-};
-
-export default Projects;
+}

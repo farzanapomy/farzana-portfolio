@@ -1,3 +1,4 @@
+import { Button, TextField } from '@mui/material';
 import React from 'react';
 
 const ContactMe = () => {
@@ -6,11 +7,37 @@ const ContactMe = () => {
     return (
 
         <form action="https://formsubmit.co/pomyfarzana@gmail.com" method="POST" >
-            <input type="email" name="email" placeholder="Email Address" required />
-            <input type="text" name="name" required />
-            <input type="message" name="message" cols="30" rows="10" placeholder required />
-            {/* <textarea name="" id="" /> */}
-            <button type="submit">Send</button>
+            <TextField id="standard-basic"
+                variant="standard"
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+                sx={{ width: '50%', m: 1 }}
+            />
+
+            <TextField id="standard-basic"
+                variant="standard"
+                type="text"
+                name="name"
+                placeholder='Write you name'
+                sx={{ width: '50%', m: 1 }}
+                required />
+
+            <TextField id="standard-basic"
+                variant="standard"
+                type="message"
+                name="message"
+                placeholder="Write about your opinion"
+                sx={{ width: '50%', m: 1 }}
+                required />
+            <br />
+            <Button
+                variant='contained'
+                sx={{ width: '25%', m: 1 }}
+                type="submit">
+                Send
+            </Button>
         </form>
 
 
