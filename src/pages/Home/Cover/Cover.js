@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import Typical from 'react-typical'
 import Container from '@mui/material/Container';
 import './Cover.css'
 import { Button, Grid } from '@mui/material';
 import img from '../../../images/profile-photo.jpg'
 const Cover = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <Container>
             <Grid container spacing={2}>
-                <Grid item xs={12} md={6} sm={12}>
+                <Grid item xs={12} md={6} sm={12} data-aos="fade-up-left">
+                    <div className="profile-picture">
+                        <div className="picture-background " >
+                            {/* <img src={img} alt="" square={true} /> */}
+                        </div>
+                    </div>
+                </Grid>
+
+                <Grid item xs={12} md={6} sm={12} data-aos="fade-down-right">
                     <div className="cover-icons">
 
                         <a href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'> <i className="fab fa-linkedin"></i>
@@ -62,13 +78,6 @@ const Cover = () => {
                     </div>
                 </Grid>
 
-                <Grid item xs={12} md={6} sm={12}>
-                    <div className="profile-picture">
-                        <div className="picture-background " >
-                            {/* <img src={img} alt="" square={true} /> */}
-                        </div>
-                    </div>
-                </Grid>
 
             </Grid>
 
