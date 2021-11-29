@@ -6,7 +6,7 @@ const ContactMe = () => {
 
     return (
 
-        <form action="https://formsubmit.co/pomyfarzana@gmail.com" method="POST" >
+        <form action="https://formsubmit.co/farzanapomy56@gmail.com" method="POST" >
             <TextField id="standard-basic"
                 variant="standard"
                 type="email"

@@ -52,11 +52,11 @@ export default function Project() {
                             }}
                         >
 
-                            <Box component="span" sx={{ fontSize: 16, mt: 1 }}>
-                                123 Main St, Phoenix AZ
+                            <Box component="span" sx={{ fontSize: 16, mt: 1, color: 'white' }}>
+                                {project.name}
                             </Box>
                             <Box component="span" sx={{ color: 'primary.main', fontSize: 22 }}>
-                                $280,000 — $310,000
+                                {project.description}
                             </Box>
                             <Box
                                 sx={{
@@ -76,7 +76,8 @@ export default function Project() {
                                 }}
                             >
                                 <ErrorOutlineIcon />
-                                CONFIDENCE SCORE 85%
+                                Duration Time :
+                                {project.durationTime}
                             </Box>
                         </Box>
                     </Box>
