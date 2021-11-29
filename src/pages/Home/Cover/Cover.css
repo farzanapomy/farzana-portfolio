@@ -3,7 +3,9 @@
     font-size: 25px;
     font-family: 'poppins bold';
 }
-
+.primary-text{
+    color: blanchedalmond;
+}
 .cover-role h1 {
     color: tomato;
     font-size: 35px;

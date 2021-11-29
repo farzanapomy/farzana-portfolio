@@ -2,9 +2,9 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import { alpha } from '@mui/material/styles';
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 
-export default function Project() {
+const Projects = () => {
     const [projects, setProjects] = React.useState([]);
     React.useEffect(() => {
         fetch('/projects.json')
@@ -52,10 +52,10 @@ export default function Project() {
                             }}
                         >
 
-                            <Box component="span" sx={{ fontSize: 16, mt: 1, color: 'white' }}>
+                            <Box component="span" sx={{ fontSize: 25, mt: 1, color: 'tomato' }}>
                                 {project.name}
                             </Box>
-                            <Box component="span" sx={{ color: 'primary.main', fontSize: 22 }}>
+                            <Box component="span" sx={{ color: 'white', fontSize: 22 }}>
                                 {project.description}
                             </Box>
                             <Box
@@ -76,8 +76,11 @@ export default function Project() {
                                 }}
                             >
                                 <ErrorOutlineIcon />
-                                Duration Time :
-                                {project.durationTime}
+                                <Typography sx={{ color: 'white', fontSize: 15 }}>
+                                    Duration Time :
+                                    {project.durationTime}
+                                </Typography>
+
                             </Box>
                         </Box>
                     </Box>
@@ -88,3 +91,5 @@ export default function Project() {
         </Container>
     );
 }
+
+export default Projects;

@@ -68,20 +68,23 @@ const Header = () => {
 
           </Box>
 
-          {/* <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }}>
-            <NavLink as={Link} to='/myProject' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }}>
+            <Link to='/projects' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
               My Project
-            </NavLink>
+            </Link>
             <NavLink as={Link} to='/resume' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
               My Resume
             </NavLink>
-            <NavLink to='/contactMe' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+            <NavLink to='/ContactMe' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
               Contact Me
+            </NavLink>
+            <NavLink to='/blogs' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+              Blogs
             </NavLink>
             <NavLink to='about' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
               About
             </NavLink>
-          </Box> */}
+          </Box>
 
           {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

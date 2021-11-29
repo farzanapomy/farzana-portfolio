@@ -16,7 +16,7 @@ const Cover = () => {
 
     return (
         <>
-            <div style={{ background: '#202020' }}>
+            <div style={{}}>
                 <Container>
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={6} sm={12} data-aos="fade-up-left">
@@ -32,16 +32,22 @@ const Cover = () => {
                             <div className="cover-details-name">
                                 <span className="primary-text">
                                     {' '}
-                                    Hello ,This is  <span className="highlighted-text">
-                                        Farzana Pomy
-                                    </span>
+                                    <p>
+
+                                        Hello,This is 
+                                        <span className="highlighted-text">
+                                            Farzana Pomy
+                                        </span>
+                                    </p>
                                 </span>
                             </div>
                             <div className="cover-role">
-                                <span className='primary-text'>
+                                <span >
+                                    <span className="primary-text">I am</span>
                                     <h1>
-                                        {" "}
+                                        {""}
                                         <Typical
+
                                             loop={Infinity}
                                             steps={[
                                                 'Junior Developer',
@@ -56,7 +62,7 @@ const Cover = () => {
                                     </h1>
                                 </span>
                                 <span className='cover-tagline'>
-                                    I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh. am a junior web developer.I know how to manage a day or 24 hours. I know how to improve my skill each and every time.Maybe I'm the person whose you are looking for ....
+                                    I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh.I am a junior web developer.I know how to manage a day or 24 hours. I know how to improve my skill each and every time.Maybe I'm the person whose you are looking for ....
                                 </span>
                                 <h2>Find me </h2>
                                 <div className="cover-icons">

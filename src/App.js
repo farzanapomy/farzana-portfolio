@@ -12,6 +12,7 @@ import Header from './pages/Home/Header/Header';
 import Cover from './pages/Home/Cover/Cover';
 import Projects from './pages/Home/Projects/Projects';
 import ContactMe from './pages/Home/ContactMe/ContactMe';
+import Blogs from './pages/Home/Blogs/Blogs';
 
 
 function App() {
@@ -26,8 +27,9 @@ function App() {
           <Route path="about/*" element={<About />} />
           <Route path="cover/*" element={<Cover />} />
           {/* <Route path="myProject/*" element={<MyProject />} /> */}
-          <Route path="projects/*" element={<Projects />} />
-          <Route path="contactMe/*" element={<ContactMe />} />
+          <Route path="Projects/*" element={<Projects />} />
+          <Route path="ContactMe/*" element={<ContactMe />} />
+          <Route path="blogs/*" element={<Blogs />} />
 
         </Routes>
       </BrowserRouter>
