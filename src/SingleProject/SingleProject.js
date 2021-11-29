@@ -6,7 +6,7 @@ import { Container, Typography } from '@mui/material';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const Projects = () => {
+const SingleProject = () => {
     React.useEffect(() => {
         AOS.init();
     }, [])
@@ -100,4 +100,4 @@ const Projects = () => {
     );
 }
 
-export default Projects;
+export default SingleProject;

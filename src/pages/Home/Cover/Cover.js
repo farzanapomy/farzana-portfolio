@@ -34,8 +34,7 @@ const Cover = () => {
                                     {' '}
                                     <p>
 
-                                        Hello,This is 
-                                        <span className="highlighted-text">
+                                        Hello, <br /> This is  <span className="highlighted-text">
                                             Farzana Pomy
                                         </span>
                                     </p>
@@ -43,12 +42,14 @@ const Cover = () => {
                             </div>
                             <div className="cover-role">
                                 <span >
-                                    <span className="primary-text">I am</span>
+
                                     <h1>
-                                        {""}
+
+                                        {" "}
                                         <Typical
 
                                             loop={Infinity}
+
                                             steps={[
                                                 'Junior Developer',
                                                 1200,
@@ -64,11 +65,13 @@ const Cover = () => {
                                 <span className='cover-tagline'>
                                     I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh.I am a junior web developer.I know how to manage a day or 24 hours. I know how to improve my skill each and every time.Maybe I'm the person whose you are looking for ....
                                 </span>
-                                <h2>Find me </h2>
+
                                 <div className="cover-icons">
-                                    <a href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'> <i className="fab fa-linkedin"></i>
-                                    </a>
-                                    <a href='https://github.com/farzanapomy' target='_blank'> <i className="fab fa-github"></i>
+                                    <span><h2>Find me </h2> </span>
+
+                                    <a href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'>LinkedIn <i className="fab fa-linkedin"></i>
+                                    </a> <br />
+                                    <a href='https://github.com/farzanapomy' target='_blank'>Github <i className="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
