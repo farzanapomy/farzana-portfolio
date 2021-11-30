@@ -8,14 +8,14 @@ import { Button, Grid } from '@mui/material';
 import img from '../../../images/profile-photo.jpg'
 
 const Cover = () => {
-    
+
     useEffect(() => {
         AOS.init();
     }, [])
 
     return (
 
-        <Container style={{ margin: "0px auto" }}>
+        <Container >
             <div >
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6} sm={12} data-aos="fade-up-left">

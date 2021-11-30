@@ -38,7 +38,7 @@
 .picture-background{
     height: 92%;
     width: 92%;
-    /* background-image: url('../../../images/profile-photo.jpg'); */
+    background-image: url('../../../images/profile-photo.jpg');
     background-size: cover;
     border-radius: 50%;
     background-position: center;

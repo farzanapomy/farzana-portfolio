@@ -21,77 +21,79 @@ const Services = () => {
         AOS.init();
     }, [])
     return (
-        <Container data-aos="zoom-out-down">
-            <h1 className='highlighted-text' data-aos="zoom-out-down">My Services</h1>
-            <Grid container spacing={2} >
-                <Grid item xs={12} md={4} sx={{ my: 1 }} >
-                    <Card data-aos="fade-up-left">
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="140"
-                            image={fullstack}
-                        />
-                        <CardContent sx={{ backgroundColor: 'black', color: 'white' }}>
-                            <Typography gutterBottom variant="h5" component="div">
-                                Web Development
-                            </Typography>
-                            <Typography variant="body2" >
-                                I have such a beautiful projects based full stack.
-                            </Typography>
-                        </CardContent>
+        <>
+            <Container data-aos="zoom-out-down">
+                <h1 className='highlighted-text' data-aos="zoom-out-down">My Services</h1>
+                <Grid container spacing={2} >
+                    <Grid item xs={12} md={4} sx={{ my: 1 }} >
+                        <Card data-aos="fade-up-left">
+                            <CardMedia
+                                component="img"
+                                alt="green iguana"
+                                height="140"
+                                image={fullstack}
+                            />
+                            <CardContent sx={{ backgroundColor: 'black', color: 'white' }}>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Web Development
+                                </Typography>
+                                <Typography variant="body2" >
+                                    I have such a beautiful projects based full stack.
+                                </Typography>
+                            </CardContent>
 
-                    </Card>
+                        </Card>
+
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Card data-aos="flip-left">
+                            <CardMedia
+                                component="img"
+                                alt="green iguana"
+                                height="140"
+                                image={mern}
+
+                            />
+                            <CardContent sx={{ backgroundColor: 'black', color: 'white' }}>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    MERN Stack Development
+                                </Typography>
+                                <Typography variant="body2" >
+                                    I am much comfortable with MERN Stack Projects.
+                                </Typography>
+                            </CardContent>
+
+                        </Card>
+
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Card data-aos="fade-up-right">
+                            <CardMedia
+                                component="img"
+                                alt="green iguana"
+                                height="140"
+                                image={react}
+                            />
+                            <CardContent sx={{ backgroundColor: 'black', color: 'white' }}>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    React.js
+                                </Typography>
+                                <Typography variant="body2">
+                                    My all big projects base on React.js.
+                                </Typography>
+                            </CardContent>
+
+                        </Card>
+
+                    </Grid>
 
                 </Grid>
-                <Grid item xs={12} md={4}>
-                    <Card data-aos="flip-left">
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="140"
-                            image={mern}
-
-                        />
-                        <CardContent sx={{ backgroundColor: 'black', color: 'white' }}>
-                            <Typography gutterBottom variant="h5" component="div">
-                                MERN Stack Development
-                            </Typography>
-                            <Typography variant="body2" >
-                                I am much comfortable with MERN Stack Projects.
-                            </Typography>
-                        </CardContent>
-
-                    </Card>
-
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Card data-aos="fade-up-right">
-                        <CardMedia
-                            component="img"
-                            alt="green iguana"
-                            height="140"
-                            image={react}
-                        />
-                        <CardContent sx={{ backgroundColor: 'black', color: 'white' }}>
-                            <Typography gutterBottom variant="h5" component="div">
-                                React.js
-                            </Typography>
-                            <Typography variant="body2">
-                                My all big projects base on React.js.
-                            </Typography>
-                        </CardContent>
-
-                    </Card>
-
-                </Grid>
-
-            </Grid>
 
 
 
 
-        </Container>
+            </Container>
+        </>
     );
 }
 export default Services;
