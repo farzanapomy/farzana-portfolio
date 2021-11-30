@@ -8,7 +8,7 @@ import { CssBaseline } from '@mui/material';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <CssBaseline></CssBaseline>
+    <CssBaseline/>
   </React.StrictMode>,
   document.getElementById('root')
 );

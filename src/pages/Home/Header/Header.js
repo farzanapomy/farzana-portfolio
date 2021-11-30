@@ -2,124 +2,142 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import { Link, NavLink, useNavigate } from "react-router-dom";
-
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+import { Link } from 'react-router-dom';
+import { makeStyles } from '@mui/styles';
+import { Drawer, useTheme } from '@mui/material';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailIcon from '@mui/icons-material/Mail';
 
 const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const theme = useTheme();
+  const useStyle = makeStyles({
+    navItem: {
+      color: 'white',
+      textDecoration: 'none'
+    },
+    navIcon: {
+      [theme.breakpoints.up('sm')]: {
+        display: 'none !important'
+      },
+      navLogo: {
+        [theme.breakpoints.down('sm')]: {
+          display: 'none !important'
+        }
+      },
+      smallNavItem: {
+        color: 'white ',
+        textDecoration: 'none '
+      },
+    }
+  })
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  const { navItem, navIcon, navLogo, smallNavItem } = useStyle();
+  const [state, setState] = React.useState(false);
 
-  const handleCloseNavMenu = () => {
 
-    setAnchorElNav(null);
-  };
 
-  let navigate = useNavigate();
-  const handleCloseUserMenu = () => {
-    navigate("/about");
+  const list = (
+    <Box
+      sx={{ width: 250 }}
+      role="presentation"
 
-    setAnchorElUser(null);
-  };
+    >
+      <List>
+
+        <ListItem button >
+          <ListItemText>
+            <Link className={smallNavItem} to='/home'>Home</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button >
+          <ListItemText>
+            <Link className={smallNavItem} to='/projects'>Projects</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button >
+          <ListItemText>
+            <Link className={smallNavItem} to='/contactMe'>Contact Me</Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem button >
+          <ListItemText>
+            <Link className={smallNavItem} to='/about'>About me </Link>
+          </ListItemText>
+        </ListItem>
+
+      </List>
+      <Divider />
+
+    </Box>
+  );
+
 
   return (
-
-    <AppBar position="static" sx={{ backgroundColor: "black", boxShadow: "none" }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex', color: 'while' } }}
-          >
-
-            <NavLink as={Link} to='/home' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none', margin: "0px auto" }}>
-              Farzana Pomy
-            </NavLink>
-
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+    <>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static">
+          <Toolbar>
             <IconButton
               size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+              edge="start"
               color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+              className={navIcon}
+              onClick={() => setState(true)}
             >
               <MenuIcon />
             </IconButton>
+            <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              Farzana Pomy
+            </Typography>
+            <Box>
+              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }}>
+                <Link className={navItem} to='/home' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+                  Home
+                </Link>
+                <Link className={navItem} to='/projects' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+                  My Project
+                </Link>
 
-          </Box>
+                <Link className={navItem} to='/ContactMe' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+                  Contact Me
+                </Link>
+                <Link className={navItem} to='/blogs' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+                  Blogs
+                </Link>
+                <Link className={navItem} to='about' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+                  About
+                </Link>
+              </Box>
+            </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }}>
-            <Link to='/projects' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-              My Project
-            </Link>
-            <NavLink as={Link} to='/resume' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-              My Resume
-            </NavLink>
-            <NavLink to='/ContactMe' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-              Contact Me
-            </NavLink>
-            <NavLink to='/blogs' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-              Blogs
-            </NavLink>
-            <NavLink to='about' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-              About
-            </NavLink>
-          </Box>
+          </Toolbar>
+        </AppBar>
+      </Box>
+      <div>
 
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
-        </Toolbar>
-      </Container>
-    </AppBar>
+        <React.Fragment >
+          <Drawer
+            open={state}
+            onClose={() => setState(false)}
+          >
+            {list}
+          </Drawer>
+        </React.Fragment>
 
+      </div>
+    </>
   );
-};
+}
+
 export default Header;

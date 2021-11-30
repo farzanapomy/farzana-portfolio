@@ -6,10 +6,8 @@ import { CardMedia, Container, Grid } from '@mui/material';
 import fullstack from '../../../images/full-stack.jpg';
 import mern from '../../../images/mern.jpg';
 import react from '../../../images/react.jpg';
-import Color from 'color';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { padding } from '@mui/system';
 import './Services.css'
 
 
@@ -21,7 +19,7 @@ const Services = () => {
         AOS.init();
     }, [])
     return (
-        <>
+       
             <Container data-aos="zoom-out-down">
                 <h1 className='highlighted-text' data-aos="zoom-out-down">My Services</h1>
                 <Grid container spacing={2} >
@@ -93,7 +91,7 @@ const Services = () => {
 
 
             </Container>
-        </>
+       
     );
 }
 export default Services;
