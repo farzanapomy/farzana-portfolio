@@ -51,13 +51,13 @@ const Projects = () => {
 
 
     return (
-        <Container >
+      
             <Grid container spacing={2}>
                 {
                     projects.map(project =>
                         <Grid item xs={12} md={4}
                             key={project.id}>
-                            <Card sx={{ maxWidth: 345 }} data-aos="fade-up-left"
+                            <Card  data-aos="zoom-in"
                             >
                                 <CardHeader
 
@@ -109,7 +109,7 @@ const Projects = () => {
                 }
 
             </Grid>
-        </Container >
+       
     );
 }
 

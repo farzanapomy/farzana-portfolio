@@ -20,9 +20,7 @@
     margin: 5px 0px 0px 0px;
     font-family: poppins-light;
 }
-.cover-options .resume-btn{
-    margin: 0 0 0 29px;
-}
+
 .cover-options .resume-btn:hover{
     margin: 0 0 0 29px;
     background-color: cornsilk;
@@ -33,13 +31,12 @@
      border-radius: 50%;
      height: 350px;
      width: 350px;
-    
 }
 
 .picture-background{
     height: 92%;
     width: 92%;
-    /* background-image: url('../../../images/profile-photo.jpg'); */
+    background-image: url('../../../images/profile-photo.jpg');
     background-size: cover;
     border-radius: 50%;
     background-position: center;
