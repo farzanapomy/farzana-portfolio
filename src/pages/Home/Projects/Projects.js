@@ -1,21 +1,14 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import { alpha } from '@mui/material/styles';
-import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -60,13 +53,12 @@ const Projects = () => {
     return (
         <Container >
             <Grid container spacing={2}>
-
                 {
                     projects.map(project =>
                         <Grid item xs={12} md={4}
-                         key={project.id}>
+                            key={project.id}>
                             <Card sx={{ maxWidth: 345 }} data-aos="fade-up-left"
-                               >
+                            >
                                 <CardHeader
 
                                     action={
@@ -106,10 +98,9 @@ const Projects = () => {
                                     >
 
                                     </ExpandMore>
-                                    <Link to={`projects/singleProject/${project.id}`}>
+                                    <Link to={`/projects/${project.id}`}>
                                         <Button >Full Project</Button>
                                     </Link>
-
                                 </CardActions>
 
                             </Card>
@@ -118,9 +109,6 @@ const Projects = () => {
                 }
 
             </Grid>
-
-
-
         </Container >
     );
 }

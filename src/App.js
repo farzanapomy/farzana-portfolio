@@ -29,7 +29,7 @@ function App() {
           <Route path="cover/*" element={<Cover />} />
           {/* <Route path="myProject/*" element={<MyProject />} /> */}
           <Route path="projects/*" element={<Projects />} />
-          <Route path="projects/singleProject:id/" element={<SingleProject />} />
+          <Route path="projects/:id" element={<SingleProject />} />
           <Route path="ContactMe/*" element={<ContactMe />} />
           <Route path="blogs/*" element={<Blogs />} />
 
