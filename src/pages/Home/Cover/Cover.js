@@ -16,8 +16,8 @@ const Cover = () => {
 
     return (
         <>
-            <div style={{}}>
-                <Container>
+            <Container>
+                <div style={{ margin: "0px auto" }}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={6} sm={12} data-aos="fade-up-left">
                             <div className="profile-picture">
@@ -93,10 +93,10 @@ const Cover = () => {
 
                     </Grid>
 
-                </Container>
 
 
-            </div>
+                </div>
+            </Container>
         </>
     );
 };

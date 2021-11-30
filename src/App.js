@@ -13,6 +13,7 @@ import Cover from './pages/Home/Cover/Cover';
 import Projects from './pages/Home/Projects/Projects';
 import ContactMe from './pages/Home/ContactMe/ContactMe';
 import Blogs from './pages/Home/Blogs/Blogs';
+import SingleProject from './SingleProject/SingleProject';
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
           <Route path="about/*" element={<About />} />
           <Route path="cover/*" element={<Cover />} />
           {/* <Route path="myProject/*" element={<MyProject />} /> */}
-          <Route path="Projects/*" element={<Projects />} />
+          <Route path="projects/*" element={<Projects />} />
+          <Route path="projects/singleProject:id/" element={<SingleProject />} />
           <Route path="ContactMe/*" element={<ContactMe />} />
           <Route path="blogs/*" element={<Blogs />} />
 
