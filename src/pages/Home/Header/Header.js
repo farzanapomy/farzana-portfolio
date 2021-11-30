@@ -11,9 +11,15 @@ import { Drawer, ListItemText, useTheme } from '@mui/material';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Header = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, [])
+
   const theme = useTheme();
   const useStyle = makeStyles({
     navIcon: {
@@ -70,9 +76,8 @@ const Header = () => {
 
 
   return (
-    <>
-
-      <AppBar position="static" sx={{ flexGrow: 1, backgroundColor: 'black', mb: 2 }}>
+    <div data-aos="zoom-out-down">
+      <AppBar position="static" sx={{ flexGrow: 1, backgroundColor: 'black', mb: 2 }} >
         <Toolbar>
           <IconButton
             size="large"
@@ -125,7 +130,7 @@ const Header = () => {
         </React.Fragment>
 
       </div>
-    </>
+    </div>
   );
 }
 
