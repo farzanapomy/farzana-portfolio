@@ -20,10 +20,6 @@ import MailIcon from '@mui/icons-material/Mail';
 const Header = () => {
   const theme = useTheme();
   const useStyle = makeStyles({
-    navItem: {
-      color: 'white',
-      textDecoration: 'none'
-    },
     navIcon: {
       [theme.breakpoints.up('sm')]: {
         display: 'none !important'
@@ -33,14 +29,11 @@ const Header = () => {
           display: 'none !important'
         }
       },
-      smallNavItem: {
-        color: 'white ',
-        textDecoration: 'none '
-      },
+
     }
   })
 
-  const { navItem, navIcon, navLogo, smallNavItem } = useStyle();
+  const { navItem, navIcon, navLogo } = useStyle();
   const [state, setState] = React.useState(false);
 
 
@@ -55,22 +48,22 @@ const Header = () => {
 
         <ListItem button >
           <ListItemText>
-            <Link className={smallNavItem} to='/home'>Home</Link>
+            <Link style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }} to='/home'>Home</Link>
           </ListItemText>
         </ListItem>
         <ListItem button >
           <ListItemText>
-            <Link className={smallNavItem} to='/projects'>Projects</Link>
+            <Link style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }} to='/projects'>Projects</Link>
           </ListItemText>
         </ListItem>
         <ListItem button >
           <ListItemText>
-            <Link className={smallNavItem} to='/contactMe'>Contact Me</Link>
+            <Link style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }} to='/contactMe'>Contact Me</Link>
           </ListItemText>
         </ListItem>
         <ListItem button >
           <ListItemText>
-            <Link className={smallNavItem} to='/about'>About me </Link>
+            <Link style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }} to='/about'>About me </Link>
           </ListItemText>
         </ListItem>
 
