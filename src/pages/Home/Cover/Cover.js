@@ -15,12 +15,14 @@ const Cover = () => {
     }, [])
 
     return (
-        <Container sx={{ backgroundColor: 'black' ,mt:1}}>
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6} data-aos="fade-up-left">
+        <div className='cover-container'>
+
+
+            <Grid container spacing={2} >
+                <Grid item xs={12} md={4} data-aos="fade-up-left">
                     <Box className="profile-picture">
                         <Box className="picture-background " >
-                            {/* <img src={img} alt="" square={true} /> */}
+
                         </Box>
                     </Box>
                 </Grid>
@@ -88,7 +90,7 @@ const Cover = () => {
                     </Box>
                 </Grid>
             </Grid>
-        </Container>
+        </div>
     );
 };
 
