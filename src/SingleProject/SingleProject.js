@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useParams } from 'react-router';
-
+import './SingleProject.css'
 
 const SingleProject = () => {
     const { Id } = useParams()
@@ -27,16 +27,45 @@ const SingleProject = () => {
 
     return (
         <Container >
-            <h2>{Id}</h2>
-            <h2>Hello</h2>
 
 
-            <Grid data-aos="zoom-out-up" sx={{ backgroundColor: 'white' }}>
-                <Grid item xs={12} md={6}>
-                    <h2>{findProject[0]?.name}</h2>
+            <Grid container spacing={2} data-aos="zoom-out-up" sx={{ color: 'white' }} >
+
+
+                <Grid item xs={12} md={6} sx={{ textAlign: "left", marginTop: 15 }}>
+                    <Typography variant='h3' >
+                        {findProject[0]?.name}
+                    </Typography>
+                    <br />
+                    <Typography variant='h5' >
+                        Using technologies :
+                    </Typography>
+                    <br />
+                    <Typography >
+                        {findProject[0]?.technology}
+                    </Typography>
+                    <br />
+                    <Typography variant='h4' >
+                        Features :
+                    </Typography>
+                    <br />
+                    <Typography>
+                        -{findProject[0]?.features[0]} <br />
+                        -{findProject[0]?.features[1]} <br />
+                        -{findProject[0]?.features[1]}
+                    </Typography>
+
+                    <button className="link-btn">
+                        <a style={{ textDecoration: 'none' }} href={findProject[0]?.liveLink}>Live link</a> {" "}
+                    </button> {" "}
+                    <button className="link-btn">
+                        <a style={{ textDecoration: 'none' }} href={findProject[0]?.githubLink}>Github link</a>
+                    </button>
+
+
                 </Grid>
-                <Grid>
-                    <img src={findProject[0]?.img2} alt="" />
+                <Grid item xs={12} md={6}>
+                    <img style={{ width: '50%' }} src={findProject[0]?.img} alt="" />
                 </Grid>
             </Grid >
         </Container >

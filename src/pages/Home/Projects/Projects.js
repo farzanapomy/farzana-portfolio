@@ -61,8 +61,6 @@ const Projects = () => {
                                 className='project-card'
                             >
                                 <CardHeader
-
-
                                     title={project.name}
 
                                 />
@@ -73,14 +71,14 @@ const Projects = () => {
                                     image={project.img}
                                     alt="Paella dish"
                                 />
-                                <CardContent>
+                                {/* <CardContent>
                                     <Typography variant="body2" color="text.secondary">
                                         This impressive paella is a perfect party dish and a fun meal to cook
                                         together with your guests.Add 1 cup of frozen peas along with the mussels,
                                         if you like.
                                     </Typography>
-                                </CardContent>
-
+                                </CardContent> */}
+                                <br />
 
                                 <Link to={`/projects/${project.id}`} style={{ color: 'black', paddingRight: ' 10px 20px', textDecoration: 'none', }}>
                                     <button className='project-btn'>Full Project</button>

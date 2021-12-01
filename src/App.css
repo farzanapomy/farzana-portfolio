@@ -38,8 +38,10 @@
 }
 body{
   background-image: url(../src/images/1.gif);
-  margin: 0 auto;
-  
-  background-color: 'rgba(450, 58, 74, 0.9)';
-  background-blend-mode: luminosity  ;
+  background-color: 'rgba(45, 58, 74, 9)';
+  background-blend-mode: lighten,
+}
+
+#App{
+  overflow-x: hidden;
 }

@@ -1,26 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Food Lover",
-        "img": "https://i.ibb.co/DQ2d34s/1.jpg",
-        "description": "This project build on vanilla HTML and CSS",
+        "name": "Mental Care",
+        "img": "https://i.ibb.co/nCf5z3G/screenshot.png",
         "durationTime": "One day",
-        "img2": "https://i.ibb.co/DQ2d34s/1.jpg"
+        "features": [
+            "This project is about mental health services based on React.",
+            "User can read all articles and check the price of all services by login.",
+            "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
+        ],
+        "technology": "Built this website using React, React Router , Firebase Authentication.",
+        "githubLink": "https://github.com/farzanapomy/life-with-beautiful-mind",
+        "liveLink": "https://life-with-beautiful-mind.web.app/"
     },
     {
         "id": 2,
-        "name": "Play With Football",
-        "img": "https://i.ibb.co/0Gzk4JS/project2.png",
-        "description": "This project build on vanilla HTML and CSS",
+        "name": "Mental Care",
+        "img": "https://i.ibb.co/nCf5z3G/screenshot.png",
         "durationTime": "One day",
-        "img2": ""
+        "features": [
+            "This project is about mental health services based on React.",
+            "User can read all articles and check the price of all services by login.",
+            "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
+        ],
+        "technology": "Built this website using React, React Router , Firebase Authentication.",
+        "githubLink": "https://github.com/farzanapomy/life-with-beautiful-mind",
+        "liveLink": "https://life-with-beautiful-mind.web.app/"
     },
     {
         "id": 3,
-        "name": "Home Decor Course",
-        "img": "https://i.ibb.co/6RVbx0p/project3-1.png",
-        "description": "This project build on vanilla HTML and CSS",
+        "name": "Mental Care",
+        "img": "https://i.ibb.co/nCf5z3G/screenshot.png",
         "durationTime": "One day",
-        "img2": ""
+        "features": [
+            "This project is about mental health services based on React.",
+            "User can read all articles and check the price of all services by login.",
+            "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
+        ],
+        "technology": "Built this website using React, React Router , Firebase Authentication.",
+        "githubLink": "https://github.com/farzanapomy/life-with-beautiful-mind",
+        "liveLink": "https://life-with-beautiful-mind.web.app/"
     }
 ]
