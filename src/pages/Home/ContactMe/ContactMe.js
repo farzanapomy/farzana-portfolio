@@ -2,19 +2,23 @@ import { Button, Container, Grid, TextField } from '@mui/material';
 import React from 'react';
 import contact from '../../../images/contact.jpg'
 import bg from '../../../images/1.gif'
-
-
+import './ContactMe.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 const ContactMe = () => {
-
+    React.useEffect(() => {
+        AOS.init();
+    }, [])
 
     return (
-        <Container >
-            <Grid container spacing={2} sx={{ my: 1 }}>
-                <Grid item xs={12} md={6}>
-                    <img style={{ width: '75%' }} src={contact} alt="" />
-
+        <Container data-aos="zoom-out" className='contact'>
+            <Grid container spacing={2} >
+                <Grid item xs={12} md={6} className='background' style={{ width: '75%', borderRadius: '15px' }}>
+                    {/* <img  src={contact} alt="" /> */}
+                    <h2 className='text'>You can tell me about me and my website.Please write your opinion.</h2>
                 </Grid>
                 <Grid item xs={12} md={6}>
+
                     <form action="https://formsubmit.co/farzanapomy56@gmail.com" method="POST" >
                         <TextField id="standard-basic"
                             variant="standard"
@@ -22,7 +26,7 @@ const ContactMe = () => {
                             name="email"
                             placeholder="Email Address"
                             required
-                            sx={{ width: '50%', m: 1 }}
+                            sx={{ m: 1, backgroundColor: 'white', borderRadius: '10px', padding: '2% 15%' }}
                         />
 
                         <TextField id="standard-basic"
@@ -30,7 +34,7 @@ const ContactMe = () => {
                             type="text"
                             name="name"
                             placeholder='Write you name'
-                            sx={{ width: '50%', m: 1 }}
+                            sx={{ m: 1, backgroundColor: 'white', borderRadius: '10px', padding: '2% 15%' }}
                             required />
 
                         <TextField id="standard-basic"
@@ -38,12 +42,12 @@ const ContactMe = () => {
                             type="message"
                             name="message"
                             placeholder="Write about your opinion"
-                            sx={{ width: '50%', m: 1 }}
+                            sx={{ m: 1, backgroundColor: 'white', borderRadius: '10px', padding: '2% 15%' }}
                             required />
                         <br />
                         <Button
-                            variant='contained'
-                            sx={{ width: '25%', m: 1 }}
+
+                            sx={{ m: 1, backgroundColor: '#efead7', borderRadius: '10px', padding: '2% 15%' }}
                             type="submit">
                             Send
                         </Button>

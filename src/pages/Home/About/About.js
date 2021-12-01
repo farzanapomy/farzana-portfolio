@@ -17,7 +17,7 @@ const About = () => {
                     <Typography variant="h5" component="div">
                         My name is <span style={{ color: 'tomato' }}>Farzana Pomy </span>.I am from bangladesh.
                         I am studying computer science in Port City International University.
-                        I have no experience about web development . But i am comfortable to build a Front and back-end side projects.I build few project with Full stack projects.
+                        I have no experience about web development . But i am comfortable to build a Front and back-end side projects.I build few project with Full stack projects.I know how to manage a day or 24 hours. I know how to improve my skill each and every time.Maybe I'm the person whose you are looking for ....
                     </Typography>
 
                     <Typography sx={{ mb: 1.5 }} color="text.secondary">

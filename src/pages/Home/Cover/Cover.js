@@ -7,8 +7,50 @@ import './Cover.css'
 import { Button, Grid } from '@mui/material';
 import img from '../../../images/profile-photo.jpg'
 import { Box } from '@mui/system';
+import PropTypes from 'prop-types';
+import { makeStyles } from '@mui/styles';
 
 const Cover = () => {
+    const useStyles = makeStyles({
+        root: {
+            background: (props) =>
+                props.color === 'red'
+                    ? 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
+                    : 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+            border: 0,
+            borderRadius: 3,
+            boxShadow: (props) =>
+                props.color === 'red'
+                    ? '0 3px 5px 2px rgba(255, 105, 135, .3)'
+                    : '0 3px 5px 2px rgba(33, 203, 243, .3)',
+            color: 'white',
+            height: 48,
+
+            padding: '0 70px',
+            margin: 8,
+        },
+    });
+
+    function MyButton(props) {
+        const { color, ...other } = props;
+        const classes = useStyles(props);
+        return <Button className={classes.root} {...other} />;
+    }
+
+    MyButton.propTypes = {
+        color: PropTypes.oneOf(['blue', 'red']).isRequired,
+    };
+
+
+    function MyButton(props) {
+        const { color, ...other } = props;
+        const classes = useStyles(props);
+        return <Button className={classes.root} {...other} />;
+    }
+
+    MyButton.propTypes = {
+        color: PropTypes.oneOf(['blue', 'red']).isRequired,
+    };
 
     useEffect(() => {
         AOS.init();
@@ -63,29 +105,27 @@ const Cover = () => {
                             </h1>
                         </span>
                         <span className='cover-tagline'>
-                            I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh.I am a junior web developer.I know how to manage a day or 24 hours. I know how to improve my skill each and every time.Maybe I'm the person whose you are looking for ....
+                            I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh.I am a junior web developer.
                         </span>
 
                         <Box className="cover-icons">
-                            <span><h2>Find me </h2> </span>
-
-                            <a href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'>LinkedIn <i className="fab fa-linkedin"></i>
-                            </a> <br />
-                            <a href='https://github.com/farzanapomy' target='_blank'>Github <i className="fab fa-github"></i>
+                            <a href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'>LinkedIn {' '}
+                            </a> { ' '}
+                            <a href='https://github.com/farzanapomy' target='_blank'>Github {' '}
                             </a>
                         </Box>
                     </Box>
 
                     <Box >
-                        <Button variant="contained" className="cover-options">{" "}
-                            Hire Me {" "}
-                        </Button>
-                        <p>
-                            <a href="FarzanaResume.pdf" download='FarzanaResume.pdf' style={{ textDecoration: "none" }}>
 
-                                <Button variant="contained" className='resume-btn'>Download Resume</Button>
-                            </a>
-                        </p>
+                        <React.Fragment>
+                            <MyButton color="red"> Hire Me</MyButton>
+                            <MyButton color="blue"><a href="FarzanaResume.pdf" download='FarzanaResume.pdf' style={{ textDecoration: "none" }}>
+
+                                <Button variant="contained" className='resume-btn'>Resume</Button>
+                            </a></MyButton>
+                        </React.Fragment>
+
 
                     </Box>
                 </Grid>

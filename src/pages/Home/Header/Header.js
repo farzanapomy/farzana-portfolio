@@ -90,6 +90,7 @@ const Header = () => {
           >
             <MenuIcon />
           </IconButton>
+
           <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Farzana Pomy
           </Typography>

@@ -12,6 +12,7 @@ const Home = () => {
 
 
         <Container >
+
             <Cover></Cover>
             <Services></Services>
             <Projects></Projects>
