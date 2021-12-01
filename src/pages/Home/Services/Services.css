@@ -1,11 +1,28 @@
-.highlighted-text{
+.high-text{
     padding: 5px;
-    margin: 10px;
-    /* border: 1px dotted gray; */
-    display: inline;
+    margin: 100px ;
+    color: tomato;
+    /* display: inline; */
 }
-.highlighted-text:hover{
-    transform: rotateZ(360deg);
-    /* transform: scale(2); */
-    transition:1s ease-in-out;
+.high-text :hover{
+    position: absolute;
+    top: 23.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+}
+
+.service-img:hover{
+    transform: scale(1.90);
+    transition: 3s ease-in-out; 
+}
+
+.service-card:hover{
+
+    color: tomato;
+    background-color: rgba(255, 255, 0, 0.493);
+    
+}
+.service-container{
+    margin-bottom: 100px;
 }

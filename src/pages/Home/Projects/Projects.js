@@ -4,22 +4,20 @@ import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { Button, Container, Grid } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
-
+import './Projects.css'
 
 const Projects = () => {
+
     React.useEffect(() => {
         AOS.init();
     }, [])
+
 
     const [projects, setProjects] = React.useState([]);
     React.useEffect(() => {
@@ -51,21 +49,20 @@ const Projects = () => {
 
 
     return (
-      
-            <Grid container spacing={2}>
+        <Container className='project-container'>
+            <h2>My Projects</h2>
+            <Grid container spacing={2} sc={{ my: 1 }} >
                 {
                     projects.map(project =>
                         <Grid item xs={12} md={4}
+
                             key={project.id}>
-                            <Card  data-aos="zoom-in"
+                            <Card data-aos="zoom-in"
+                                className='project-card'
                             >
                                 <CardHeader
 
-                                    action={
-                                        <IconButton aria-label="settings">
-                                            <MoreVertIcon />
-                                        </IconButton>
-                                    }
+
                                     title={project.name}
 
                                 />
@@ -83,25 +80,13 @@ const Projects = () => {
                                         if you like.
                                     </Typography>
                                 </CardContent>
-                                <CardActions disableSpacing>
-                                    <IconButton aria-label="add to favorites">
-                                        <FavoriteIcon />
-                                    </IconButton>
-                                    <IconButton aria-label="share">
-                                        <ShareIcon />
-                                    </IconButton>
-                                    <ExpandMore
-                                        expand={expanded}
-                                        onClick={handleExpandClick}
-                                        aria-expanded={expanded}
-                                        aria-label="show more"
-                                    >
 
-                                    </ExpandMore>
-                                    <Link to={`/projects/${project.id}`}>
-                                        <Button >Full Project</Button>
-                                    </Link>
-                                </CardActions>
+
+                                <Link to={`/projects/${project.id}`} style={{ color: 'black', paddingRight: ' 10px 20px', textDecoration: 'none', }}>
+                                    <button className='project-btn'>Full Project</button>
+
+                                </Link>
+
 
                             </Card>
                         </Grid>
@@ -109,7 +94,7 @@ const Projects = () => {
                 }
 
             </Grid>
-       
+        </Container >
     );
 }
 

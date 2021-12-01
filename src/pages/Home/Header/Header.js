@@ -76,7 +76,7 @@ const Header = () => {
 
 
   return (
-    <div data-aos="zoom-out-down">
+    <div data-aos="zoom-out-down" sx={{ m: 0 }}>
       <AppBar position="static" sx={{ flexGrow: 1, backgroundColor: 'black', mb: 2 }} >
         <Toolbar>
           <IconButton
