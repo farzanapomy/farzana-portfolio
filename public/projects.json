@@ -2,22 +2,25 @@
     {
         "id": 1,
         "name": "Food Lover",
-        "img": "https://i.ibb.co/qgfPs1Y/project1.png",
+        "img": "https://i.ibb.co/DQ2d34s/1.jpg",
         "description": "This project build on vanilla HTML and CSS",
-        "durationTime":"One day"
+        "durationTime": "One day",
+        "img2": "https://i.ibb.co/DQ2d34s/1.jpg"
     },
     {
         "id": 2,
         "name": "Play With Football",
         "img": "https://i.ibb.co/0Gzk4JS/project2.png",
         "description": "This project build on vanilla HTML and CSS",
-        "durationTime":"One day"
+        "durationTime": "One day",
+        "img2": ""
     },
     {
         "id": 3,
         "name": "Home Decor Course",
         "img": "https://i.ibb.co/6RVbx0p/project3-1.png",
         "description": "This project build on vanilla HTML and CSS",
-        "durationTime":"One day"
+        "durationTime": "One day",
+        "img2": ""
     }
 ]
