@@ -1,7 +1,6 @@
 import { Button, Container, Grid, TextField } from '@mui/material';
 import React from 'react';
-import contact from '../../../images/contact.gif'
-import bg from '../../../images/1.gif'
+import contact from '../../../images/contact.g.gif'
 import './ContactMe.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -15,7 +14,7 @@ const ContactMe = () => {
             <Grid container spacing={2} >
                 <Grid item xs={12} md={6} className='background' style={{ width: '75%', borderRadius: '15px' }}>
                     <img src={contact} alt="" />
-                    {/* <h2 className='text'>Please write your opinion.</h2> */}
+
                 </Grid>
                 <Grid item xs={12} md={6}>
 

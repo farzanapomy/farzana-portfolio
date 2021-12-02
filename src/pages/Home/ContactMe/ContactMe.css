@@ -4,10 +4,7 @@
 
 .background{
     margin-left: 10px;
-    width: 60%;
-    height: 50vh;
-    background-color: rgba(126, 101, 184, 0.349);
-    box-shadow: 0px 2px 10px 3px lightpink;
+    width: 100vh;
     border-radius: 5%;
     background-repeat: no-repeat;
 }

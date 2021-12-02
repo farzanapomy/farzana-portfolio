@@ -1,6 +1,5 @@
 .cover-container{
-    text-align: left;
-
+    text-align: right;
 }
 .cover-details-name{
     font-size: 25px;
@@ -25,8 +24,10 @@
     margin: 5px 0px 0px 0px;
     font-family: poppins-light;
 }
-
-.cover-options .resume-btn:hover{
+.resume-btn{
+    margin: 20px;
+}
+.cover-options:hover{
     margin: 0 0 0 29px;
     background-color: cornsilk;
     color: black;
@@ -53,14 +54,21 @@
     transform: scale(1.06);
     transition: 1s ease-in-out; 
 }
+.icons{
+    margin: 15px;
+}
 .cover-icons{
     color: white;
-    padding-right: 15px;
+    padding-left: 25px;
+    text-decoration: none;
+    background-color: steelblue;
+    border-radius: 5px;
+    margin: 5px;
 }
-.cover-icons a{
+/* .cover-icons a{
     padding: 15px;
     margin-bottom: 15px;
-}
+} */
 .cover-icons i:hover{
     transform: scale(1.5);
 }

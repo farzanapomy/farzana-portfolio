@@ -93,7 +93,7 @@ const Cover = () => {
                                     loop={Infinity}
 
                                     steps={[
-                                        'Junior Developer',
+                                        'Junior Web Developer',
                                         1200,
                                         'MERN Stack Developer',
                                         1200,
@@ -108,23 +108,24 @@ const Cover = () => {
                             I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh.I am a junior web developer.
                         </span>
 
-                        <Box className="cover-icons">
-                            <a href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'>LinkedIn {' '}
-                            </a> {' '}
-                            <a href='https://github.com/farzanapomy' target='_blank'>Github {' '}
-                            </a>
+                        <Box>
+                            <Box className="icons">
+                                <a className="cover-icons" href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'>LinkedIn {' '}
+                                </a> {' '}
+                                <a className="cover-icons" href='https://github.com/farzanapomy' target='_blank'>Github {' '}
+                                </a>
+                            </Box>
                         </Box>
-                    </Box>
 
-                    <Box >
+                        <Box className='resume-btn'>
 
-                        <React.Fragment>
-                            <MyButton color="red"> Hire Me</MyButton>
-                            <MyButton color="blue"><a href="FarzanaResume.pdf" download='FarzanaResume.pdf' style={{ textDecoration: "none" }}>
+                            <React.Fragment >
+                                <MyButton color="blue"><a href="FarzanaResume.pdf" download='FarzanaResume.pdf' style={{ textDecoration: "none" }}>
 
-                                <Button variant="contained" className='resume-btn'>Resume</Button>
-                            </a></MyButton>
-                        </React.Fragment>
+                                    <Button variant="contained" >Explore more in Resume</Button>
+                                </a></MyButton>
+                            </React.Fragment>
+                        </Box>
 
 
                     </Box>
