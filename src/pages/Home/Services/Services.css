@@ -11,9 +11,10 @@
     transition: 3s ease-in-out; 
 }
 
-.service-card{
-    padding: 70px;
-}
+/* .service-card{
+    padding: 115px;
+} */
+
 .high-text{
     font-size: 70px;
     color: beige;

@@ -76,7 +76,7 @@ const Header = () => {
 
 
   return (
-    <div data-aos="zoom-out-down" sx={{ m: 0 }}>
+    <div data-aos="zoom-out-down" >
       <AppBar position="static" sx={{ flexGrow: 1, backgroundColor: 'black', mb: 2 }} >
         <Toolbar>
           <IconButton
@@ -134,7 +134,7 @@ const Header = () => {
         </React.Fragment>
 
       </div>
-    </div>
+    </div >
   );
 }
 

@@ -39,10 +39,9 @@ const Services = () => {
                                 I have such a beautiful projects based full stack.
                             </Typography>
                         </CardContent>
-
                     </Card>
-
                 </Grid>
+
                 <Grid item xs={12} md={4} data-aos="zoom-out-down" className='service-card'>
                     <Card data-aos="flip-left">
                         <CardMedia
@@ -62,8 +61,8 @@ const Services = () => {
                             </Typography>
                         </CardContent>
                     </Card>
-
                 </Grid>
+
                 <Grid item xs={12} md={4} data-aos="zoom-out-right" className='service-card'>
                     <Card data-aos="fade-up-right">
                         <CardMedia
@@ -81,9 +80,7 @@ const Services = () => {
                                 My all big projects base on React.js.
                             </Typography>
                         </CardContent>
-
                     </Card>
-
                 </Grid>
 
             </Grid>
