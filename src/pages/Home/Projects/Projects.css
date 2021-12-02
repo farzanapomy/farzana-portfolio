@@ -1,20 +1,41 @@
 .project-container{
     margin: 50px 0px;
-   
+}
+.project-container h1{
+    font-size: 70px;
+    color: beige;
+    margin: 50px auto;
+    
+    
 }
 
 .project-card:hover{
+    transition: 1s ease-in-out ;
     transform: scale(.9);
-    transition: ease-in-out;
+    background-color: rgba(51, 49, 48, 0.596);
+    border: 1px dotted gray;
+    color: beige;
+}
+.single-card:hover{
+    transition: 1s ease-in-out ;
+    transform: scale(.9);
+    background-color: rgba(51, 49, 48, 0.596);
+    border: 1px dotted gray;
+    color: beige;
 }
 
 .project-card{
     padding: 20px;
+    border-radius: 30px;
+}
+.project-card CardMedia{
+    border-radius: 30px;
 }
 .project-btn{
     padding: 10px 30px;
     background-image: linear-gradient(goldenrod , tomato);
     border-radius: 10px;
+    margin: 10px;
     cursor: pointer;
     border: none;
     font-weight: 600;

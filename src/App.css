@@ -38,10 +38,10 @@
 }
 body{
   background-color: #282c34;
-  background-color: 'rgba(45, 58, 74, 9)';
-  background-blend-mode: lighten,
+  
 }
 
 #App{
   /* overflow-x: hidden; */
+  overflow: hidden;
 }

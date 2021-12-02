@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, CardContent } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Projects.css'
 
@@ -30,7 +30,8 @@ const Projects = () => {
 
     return (
         <Container className='project-container'>
-            <h2>My Projects</h2>
+            <h1>My Projects</h1>
+
             <Grid container spacing={2} sc={{ my: 1 }} >
                 {
                     projects.map(project =>
@@ -38,7 +39,7 @@ const Projects = () => {
                             className='project-card'
                             key={project.id}>
                             <Card data-aos="zoom-in"
-                                className='project-card'
+                            className='single-card'
                             >
                                 <CardHeader
                                     title={project.name}
@@ -51,13 +52,13 @@ const Projects = () => {
                                     image={project.img}
                                     alt="Paella dish"
                                 />
-                                {/* <CardContent>
+                                <CardContent>
                                     <Typography variant="body2" color="text.secondary">
                                         This impressive paella is a perfect party dish and a fun meal to cook
                                         together with your guests.Add 1 cup of frozen peas along with the mussels,
                                         if you like.
                                     </Typography>
-                                </CardContent> */}
+                                </CardContent>
                                 <br />
 
                                 <Link to={`/projects/${project.id}`} style={{ color: 'black', paddingRight: ' 10px 20px', textDecoration: 'none', }}>
