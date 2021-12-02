@@ -33,7 +33,7 @@
 }
 .profile-picture{
      box-shadow: 0px 1px 0px 0px tomato;
-     border-radius: 50%;
+     border-radius: 25%;
      height: 350px;
      width: 350px;
 }
@@ -43,7 +43,7 @@
     width: 92%;
     background-image: url('../../../images/profile-photo.jpg');
     background-size: cover;
-    border-radius: 50%;
+    border-radius: 25%;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 0 0 20px;

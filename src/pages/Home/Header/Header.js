@@ -91,14 +91,17 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
 
-          <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1, marginRight: 90 }}>
-            Farzana Pomy
-          </Typography>
+          <Link className={navItem} to='/home' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
+            <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1, marginRight: 90 }}>
+              Farzana Pomy
+            </Typography>
+          </Link>
+
+
+
           <Box>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }}>
-              <Link className={navItem} to='/home' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-                Home
-              </Link>
+
               <Link className={navItem} to='/projects' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
                 My Project
               </Link>
