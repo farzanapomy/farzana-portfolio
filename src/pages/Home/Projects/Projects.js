@@ -32,14 +32,14 @@ const Projects = () => {
         <Container className='project-container'>
             <h1>My Projects</h1>
 
-            <Grid container spacing={2} sc={{ my: 1 }} >
+            <Grid container spacing={4} sc={{ my: 1 }} >
                 {
                     projects.map(project =>
                         <Grid item xs={12} md={4}
                             className='project-card'
                             key={project.id}>
                             <Card data-aos="zoom-in"
-                            className='single-card'
+                                className='single-card'
                             >
                                 <CardHeader
                                     title={project.name}
@@ -47,6 +47,7 @@ const Projects = () => {
                                 />
                                 <Typography>Duration Time : {project.durationTime}</Typography>
                                 <CardMedia
+                                    className='card-img'
                                     component="img"
                                     height="194"
                                     image={project.img}

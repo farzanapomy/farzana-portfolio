@@ -14,6 +14,7 @@ import Projects from './pages/Home/Projects/Projects';
 import ContactMe from './pages/Home/ContactMe/ContactMe';
 import Blogs from './pages/Home/Blogs/Blogs';
 import SingleProject from './SingleProject/SingleProject';
+import { ParticlesBg } from './pages/Home/Particles/Particles';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-
+      <ParticlesBg></ParticlesBg>
 
     </div>
   );

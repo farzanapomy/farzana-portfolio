@@ -43,7 +43,7 @@ const Services = () => {
                     </Card>
 
                 </Grid>
-                <Grid item xs={12} md={4} data-aos="zoom-out-down">
+                <Grid item xs={12} md={4} data-aos="zoom-out-down" className='service-card'>
                     <Card data-aos="flip-left">
                         <CardMedia
                             className='service-img'
@@ -61,11 +61,10 @@ const Services = () => {
                                 I am comfortable with MERN Stack Projects.
                             </Typography>
                         </CardContent>
-
                     </Card>
 
                 </Grid>
-                <Grid item xs={12} md={4} data-aos="zoom-out-right">
+                <Grid item xs={12} md={4} data-aos="zoom-out-right" className='service-card'>
                     <Card data-aos="fade-up-right">
                         <CardMedia
                             className='service-img'

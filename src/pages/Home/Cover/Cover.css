@@ -17,6 +17,7 @@
  }
 .highlighted-text{
     color: thistle;
+    text-align: left;
 }
 .cover-tagline{
     color: white;

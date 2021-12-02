@@ -4,23 +4,28 @@
     color: tomato;
     /* display: inline; */
 }
-.high-text :hover{
-    position: absolute;
-    top: 23.5%;
-    left: 50%;
-    transform: translate(-50%,-50%);
- 
-}
+
 
 .service-img:hover{
     transform: scale(1.90);
     transition: 3s ease-in-out; 
 }
 
-.service-card:hover{
+.service-card{
+    padding: 70px;
+}
+.high-text{
+    font-size: 70px;
+    color: beige;
+    margin: 50px auto;
+    
+}
 
+.service-card:hover{
+    /* background-color: springgreen;
+    padding: 100; */
     color: tomato;
-    background-color: rgba(255, 255, 0, 0.493);
+    /* background-color: rgba(255, 255, 0, 0.493); */
     
 }
 .service-container{

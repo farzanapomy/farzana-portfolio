@@ -27,8 +27,8 @@ const Header = () => {
         display: 'none !important'
       },
       navLogo: {
-        [theme.breakpoints.up('sm')]: {
-          display: 'none !important'
+        [theme.breakpoints.down('sm')]: {
+          display: 'none '
         },
       },
 
@@ -91,7 +91,7 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
 
-          <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1, marginRight: 90 }}>
             Farzana Pomy
           </Typography>
           <Box>

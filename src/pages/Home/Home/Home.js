@@ -1,4 +1,6 @@
 import React from 'react';
+import Particles from "react-tsparticles";
+
 import About from '../About/About';
 import Cover from '../Cover/Cover';
 import Projects from '../Projects/Projects';
@@ -8,11 +10,19 @@ import { Container } from '@mui/material';
 
 
 const Home = () => {
+    const particlesInit = (main) => {
+        console.log(main);
+
+
+    };
+
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
     return (
 
 
         <Container >
-
             <Cover></Cover>
             <Services></Services>
             <Projects></Projects>
