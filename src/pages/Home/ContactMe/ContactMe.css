@@ -5,9 +5,11 @@
 .background{
     margin-left: 10px;
     width: 100vh;
+    color: steelblue;
     border-radius: 5%;
     background-repeat: no-repeat;
 }
+
 .background:hover{
     color: whitesmoke;
     transform: scale(150deg);

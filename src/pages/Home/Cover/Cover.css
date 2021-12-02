@@ -1,6 +1,7 @@
 .cover-container{
-    text-align: right;
+    text-align: left;
 }
+
 .cover-details-name{
     font-size: 25px;
     margin-left: 5%;
@@ -8,6 +9,7 @@
 }
 .primary-text{
     color: blanchedalmond;
+    font-size: 50px;
 }
 .cover-role h1 {
     color: tomato;
@@ -20,7 +22,7 @@
 }
 .cover-tagline{
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     margin: 5px 0px 0px 0px;
     font-family: poppins-light;
 }

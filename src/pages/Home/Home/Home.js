@@ -28,9 +28,7 @@ const Home = () => {
             <Projects></Projects>
             <About></About>
             <ContactMe></ContactMe>
-            <video src=""></video>
-            <audio src=""></audio>
-            naviga
+
         </Container>
 
 

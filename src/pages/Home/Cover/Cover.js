@@ -76,7 +76,7 @@ const Cover = () => {
                             {' '}
                             <p>
 
-                                Hello, <br /> This is  <span className="highlighted-text">
+                                Hello... <br /> This is  <span className="highlighted-text">
                                     Farzana Pomy
                                 </span>
                             </p>
@@ -104,7 +104,7 @@ const Cover = () => {
                                 />
                             </h1>
                         </span>
-                        <span className='cover-tagline'>
+                        <span className='cover-tagline' variant='h2'>
                             I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh.I am a junior web developer.
                         </span>
 

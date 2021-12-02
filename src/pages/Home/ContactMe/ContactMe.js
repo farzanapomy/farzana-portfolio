@@ -12,7 +12,7 @@ const ContactMe = () => {
     return (
         <Container data-aos="zoom-out" className='contact'>
             <Grid container spacing={2} >
-                <Grid item xs={12} md={6} className='background' style={{ width: '75%', borderRadius: '15px' }}>
+                <Grid item xs={12} md={6} className='background' style={{ width: '5%', borderRadius: '15px', color: 'white' }}>
                     <img src={contact} alt="" />
 
                 </Grid>
