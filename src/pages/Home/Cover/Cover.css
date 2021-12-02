@@ -1,9 +1,10 @@
-/* .cover-container{
-    background-color: #202020;
+.cover-container{
+    text-align: left;
 
-} */
+}
 .cover-details-name{
     font-size: 25px;
+    margin-left: 5%;
     font-family: 'poppins-light';
 }
 .primary-text{

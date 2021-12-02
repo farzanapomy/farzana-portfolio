@@ -61,7 +61,7 @@ const Cover = () => {
 
 
             <Grid container spacing={2} >
-                <Grid item xs={12} md={4} data-aos="fade-up-left">
+                <Grid item xs={12} md={6} data-aos="fade-up-left">
                     <Box className="profile-picture">
                         <Box className="picture-background " >
 
@@ -110,7 +110,7 @@ const Cover = () => {
 
                         <Box className="cover-icons">
                             <a href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'>LinkedIn {' '}
-                            </a> { ' '}
+                            </a> {' '}
                             <a href='https://github.com/farzanapomy' target='_blank'>Github {' '}
                             </a>
                         </Box>

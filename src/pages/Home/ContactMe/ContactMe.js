@@ -1,6 +1,6 @@
 import { Button, Container, Grid, TextField } from '@mui/material';
 import React from 'react';
-import contact from '../../../images/contact.jpg'
+import contact from '../../../images/contact.gif'
 import bg from '../../../images/1.gif'
 import './ContactMe.css'
 import AOS from 'aos'
@@ -14,8 +14,8 @@ const ContactMe = () => {
         <Container data-aos="zoom-out" className='contact'>
             <Grid container spacing={2} >
                 <Grid item xs={12} md={6} className='background' style={{ width: '75%', borderRadius: '15px' }}>
-                    {/* <img  src={contact} alt="" /> */}
-                    <h2 className='text'>You can tell me about me and my website.Please write your opinion.</h2>
+                    <img src={contact} alt="" />
+                    {/* <h2 className='text'>Please write your opinion.</h2> */}
                 </Grid>
                 <Grid item xs={12} md={6}>
 

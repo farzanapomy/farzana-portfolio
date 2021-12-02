@@ -1,6 +1,13 @@
 .project-container{
     margin: 50px 0px;
+   
 }
+
+.project-card:hover{
+    transform: scale(.9);
+    transition: ease-in-out;
+}
+
 .project-card{
     padding: 20px;
 }
