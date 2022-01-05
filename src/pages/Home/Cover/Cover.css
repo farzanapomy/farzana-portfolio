@@ -5,7 +5,7 @@
 .cover-details-name{
     font-size: 25px;
     margin-left: 5%;
-    font-family: 'poppins-light';
+    
 }
 .primary-text{
     color: blanchedalmond;
@@ -13,8 +13,8 @@
 }
 .cover-role h1 {
     color: tomato;
-    font-size: 35px;
-    font-family: cursive;
+    margin-left: 35px;
+   
  }
 .highlighted-text{
     color: thistle;
@@ -22,13 +22,11 @@
 }
 .cover-tagline{
     color: white;
-    font-size: 40px;
-    margin: 5px 0px 0px 0px;
-    font-family: poppins-light;
+   
+   margin-left: 35px;
+   
 }
-.resume-btn{
-    margin: 20px;
-}
+
 .cover-options:hover{
     margin: 0 0 0 29px;
     background-color: cornsilk;
@@ -59,18 +57,22 @@
 .icons{
     margin: 15px;
 }
-.cover-icons{
+.cover-icons , .resume-btn Button{
     color: white;
-    padding-left: 25px;
+    margin-left: 35px;
+    padding: 5px 15px;
     text-decoration: none;
     background-color: steelblue;
     border-radius: 5px;
-    margin: 5px;
+    margin-left: 22px;
+
 }
-/* .cover-icons a{
-    padding: 15px;
-    margin-bottom: 15px;
-} */
+
 .cover-icons i:hover{
     transform: scale(1.5);
+}
+.icons-grid{
+    display: flex;
+    justify-content: lef;
+    align-items: left;
 }

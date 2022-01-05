@@ -104,29 +104,31 @@ const Cover = () => {
                                 />
                             </h1>
                         </span>
-                        <span className='cover-tagline' variant='h2'>
+                        <span className='cover-tagline' >
                             I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh.I am a junior web developer.
                         </span>
 
-                        <Box>
-                            <Box className="icons">
-                                <a className="cover-icons" href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='_blank'>LinkedIn {' '}
-                                </a> {' '}
-                                <a className="cover-icons" href='https://github.com/farzanapomy' target='_blank'>Github {' '}
-                                </a>
+                        <Box className='icons-grid'>
+                            <Box>
+                                <Box className="icons">
+                                    <a className="cover-icons" href='https://www.linkedin.com/in/farzana-pomy-11b725147/' target='blank'>LinkedIn {' '}
+                                    </a> {' '}
+                                    <a className="cover-icons" href='https://github.com/farzanapomy' target='blank'>Github {' '}
+                                    </a>
+                                </Box>
                             </Box>
+
+                            <Box>
+
+                                <React.Fragment >
+                                    <MyButton className='resume-btn'><a href="FarzanaResume.pdf" download='FarzanaResume.pdf' style={{ textDecoration: "none",padding:'0px',margin:0 }}>
+
+                                        <Button>Resume</Button>
+                                    </a></MyButton>
+                                </React.Fragment>
+                            </Box>
+
                         </Box>
-
-                        <Box className='resume-btn'>
-
-                            <React.Fragment >
-                                <MyButton color="blue"><a href="FarzanaResume.pdf" download='FarzanaResume.pdf' style={{ textDecoration: "none" }}>
-
-                                    <Button variant="contained" >Explore more in Resume</Button>
-                                </a></MyButton>
-                            </React.Fragment>
-                        </Box>
-
 
                     </Box>
                 </Grid>
