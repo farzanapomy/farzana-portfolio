@@ -1,17 +1,20 @@
 [
     {
         "id": 1,
-        "name": "Mental Care",
-        "img": "https://i.ibb.co/nCf5z3G/screenshot.png",
+        "name": "VITAL PHOTOGRAPHY",
+        "img": "https://i.ibb.co/g3FdFLF/Vital-Photography.png",
         "durationTime": "One day",
         "features": [
-            "This project is about mental health services based on React.",
-            "User can read all articles and check the price of all services by login.",
-            "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
+            "Build this website using react, react-route version 6 , firebase for Frontend and mongodb, NodeJs for backend.",
+            "By this website, users can add order any favorite service.",
+            "Also can add review with rating and can delete his unwanted order.",
+            "Here also implement admin panel.Admin can add new service, manage all orders and also make an admin for any other user.",
+            "If you use this website as a admin then please log in with email: admin@admin.com and password: 123456"
         ],
         "technology": "Built this website using React, React Router , Firebase Authentication.",
-        "githubLink": "https://github.com/farzanapomy/life-with-beautiful-mind",
-        "liveLink": "https://life-with-beautiful-mind.web.app/"
+        "githubLink": "https://github.com/farzanapomy/vital-photography-client",
+        "ServerLink": "https://github.com/farzanapomy/vital-photography-server",
+        "liveLink": "https://vital-photography.web.app/"
     },
     {
         "id": 2,
@@ -29,8 +32,8 @@
     },
     {
         "id": 3,
-        "name": "Mental Care",
-        "img": "https://i.ibb.co/nCf5z3G/screenshot.png",
+        "name": "Mr. Puppies",
+        "img": "https://i.ibb.co/6Y67c9F/Mr-puppy-com.png",
         "durationTime": "One day",
         "features": [
             "This project is about mental health services based on React.",

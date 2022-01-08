@@ -5,13 +5,13 @@ const projects = [
         description: 'This project build on vanilla HTML and CSS'
     },
     {
-        name: "Play With Football",
-        img: '../images/project2.png',
+        name: "VITAL PHOTOGRAPHY",
+        img: 'https://i.ibb.co/g3FdFLF/Vital-Photography.png',
         description: 'This project build on vanilla HTML and CSS'
     },
     {
-        name: "Home Decor Course",
-        img: '../images/project3-1.png',
+        name: "Mr. Puppies",
+        img: 'https://i.ibb.co/6Y67c9F/Mr-puppy-com.png',
         description: 'This project build on vanilla HTML and CSS'
     }
 ]
@@ -24,3 +24,5 @@ const projects = [
 // https://ibb.co/Y7Y8MBK
 // https://ibb.co/p1644RJ
 // https://ibb.co/9H9TM1N
+// https://ibb.co/5TqgXpL
+// https://ibb.co/DtgYgHg

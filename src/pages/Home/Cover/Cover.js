@@ -106,7 +106,7 @@ const Cover = () => {
                         </span>
                         <span className='cover-tagline' >
                             I am <span style={{ color: 'tomato' }}>Farzana</span> from Bangladesh.I am a junior web developer.
-                        </span>
+                    </span>
 
                         <Box className='icons-grid'>
                             <Box>
