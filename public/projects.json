@@ -27,8 +27,9 @@
             "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
         ],
         "technology": "Built this website using React, React Router , Firebase Authentication.",
-        "githubLink": "https://github.com/farzanapomy/life-with-beautiful-mind",
-        "liveLink": "https://life-with-beautiful-mind.web.app/"
+        "githubLink": "https://github.com/farzanapomy/tourism-website-client-side",
+        "serverLink": "https://github.com/farzanapomy/tourism-website-server-side",
+        "liveLink": "https://tourism-website-58422.web.app/"
     },
     {
         "id": 3,
@@ -36,12 +37,13 @@
         "img": "https://i.ibb.co/6Y67c9F/Mr-puppy-com.png",
         "durationTime": "One day",
         "features": [
-            "This project is about mental health services based on React.",
-            "User can read all articles and check the price of all services by login.",
-            "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
+            "Build this project on a full stack niche website. From this website, users can buy a suitable carrier for their puppies.",
+            "User can order any product, also can delete the unwanted product and be able to give review with a rating.",
+            "Admin can add or delete any products. And control the full website by the dashboard.Admin email: admin@admin.com || Password: 123456."
         ],
         "technology": "Built this website using React, React Router , Firebase Authentication.",
-        "githubLink": "https://github.com/farzanapomy/life-with-beautiful-mind",
-        "liveLink": "https://life-with-beautiful-mind.web.app/"
+        "githubLink": "https://github.com/farzanapomy/mr-warm-puppies-client-side",
+        "ServerLink": "https://github.com/farzanapomy/mr-warm-puppies-server-side",
+        "liveLink": "https://mr-warm-puppies.web.app/"
     }
 ]
