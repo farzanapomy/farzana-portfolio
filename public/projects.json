@@ -17,21 +17,6 @@
         "liveLink": "https://vital-photography.web.app/"
     },
     {
-        "id": 2,
-        "name": "Mental Care",
-        "img": "https://i.ibb.co/nCf5z3G/screenshot.png",
-        "durationTime": "One day",
-        "features": [
-            "This project is about mental health services based on React.",
-            "User can read all articles and check the price of all services by login.",
-            "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
-        ],
-        "technology": "Built this website using React, React Router , Firebase Authentication.",
-        "githubLink": "https://github.com/farzanapomy/tourism-website-client-side",
-        "serverLink": "https://github.com/farzanapomy/tourism-website-server-side",
-        "liveLink": "https://tourism-website-58422.web.app/"
-    },
-    {
         "id": 3,
         "name": "Mr. Puppies",
         "img": "https://i.ibb.co/6Y67c9F/Mr-puppy-com.png",
@@ -45,5 +30,21 @@
         "githubLink": "https://github.com/farzanapomy/mr-warm-puppies-client-side",
         "ServerLink": "https://github.com/farzanapomy/mr-warm-puppies-server-side",
         "liveLink": "https://mr-warm-puppies.web.app/"
+    },
+    {
+        "id": 2,
+        "name": "Nexzen Tourism",
+        "img": "https://i.ibb.co/WnrCD52/next-Zen-com.png",
+        "durationTime": "One day",
+        "features": [
+            "This project is about mental health services based on React.",
+            "User can read all articles and check the price of all services by login.",
+            "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
+        ],
+        "technology": "Built this website using React, React Router , Firebase Authentication.",
+        "githubLink": "https://github.com/farzanapomy/tourism-website-client-side",
+        "serverLink": "https://github.com/farzanapomy/tourism-website-server-side",
+        "liveLink": "https://tourism-website-58422.web.app/"
     }
+    
 ]

@@ -9,7 +9,8 @@ const About = () => {
     return (
         <Container>
 
-            <Card sx={{ minWidth: 275 }} style={{ backgroundColor: 'black', color: 'white', margin: '15px 0px', borderRadius: '15px' }}>
+            <Card sx={{ minWidth: 275 }} style={{ backgroundColor: 'black', color: 'white', margin: '15px 0px', borderRadius: '15px',textAlign:"left",padding:'10px' }}>
+                <Typography variant="h2">About me</Typography>
                 <CardContent>
                     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                         Hello There !!
@@ -24,7 +25,7 @@ const About = () => {
                         My Skils :
                     </Typography>
                     <Typography variant="body2">
-                        <Box sx={{ my: 2 }} className='skils'>
+                        <Box sx={{ my: 2 }} className='skills'>
                             Comfortable: HTML5 CSS3 Bootstrap5 JavaScript ES6 Rest API
                             <br /> React React Hooks  Context API  Express.js NodeJs Firebase
                         </Box>
