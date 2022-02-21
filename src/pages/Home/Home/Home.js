@@ -12,8 +12,6 @@ import { Container } from '@mui/material';
 const Home = () => {
     const particlesInit = (main) => {
         console.log(main);
-
-
     };
 
     const particlesLoaded = (container) => {
@@ -24,11 +22,9 @@ const Home = () => {
 
         <Container >
             <Cover></Cover>
-            <Services></Services>
             <Projects></Projects>
-            <About></About>
+            <Services></Services>
             <ContactMe></ContactMe>
-
         </Container>
 
 

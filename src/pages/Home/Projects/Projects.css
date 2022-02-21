@@ -5,38 +5,28 @@
     font-size: 60px;
     color: beige;
     margin: 50px auto;
-    
 }
 
-.project-card:hover{
-    transition: 1s ease-in-out ;
-    transform: scale(.9);
-    background-color: rgba(51, 49, 48, 0.596);
-    border: 1px dotted gray;
-    color: beige;
-}
 .card-img{
     border-radius: 15px;
-}
-.single-card:hover{
-    transition: 1s ease-in-out ;
-    transform: scale(.9);
-    background-color: rgba(51, 49, 48, 0.596);
-    border: 1px dotted gray;
-    color: beige;
+    margin-bottom: 10px;
 }
 
 .project-card{
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 15px;
     padding: 20px;
-    border-radius: 30px;
-    /* background-color: slategrey; */
+    height: 450px;
+   
 }
-.project-card CardMedia{
-    border-radius: 30px;
+.border-card{
+    text-align: left;
+    
 }
 .project-btn{
     padding: 10px 30px;
-    background-image: linear-gradient(goldenrod , tomato);
+    background-image: linear-gradient(#28a745,#28a7467e);
     border-radius: 10px;
     margin: 10px;
     cursor: pointer;
@@ -44,3 +34,4 @@
     font-weight: 600;
     
 }
+

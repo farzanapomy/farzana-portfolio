@@ -2,30 +2,26 @@
     text-align: left;
     margin-bottom: 25px;
 }
-
+.cover-role{
+    margin-left: 5%;
+    line-height: 25px;
+}
 .cover-details-name{
     font-size: 25px;
     margin-left: 5%;
     
 }
 .primary-text{
-    color: blanchedalmond;
-    font-size: 50px;
+    font-size: 25px;
 }
-.cover-role h1 {
-    color: tomato;
-    margin-left: 35px;
-   
- }
+  
 .highlighted-text{
-    color: thistle;
+    letter-spacing: 10px;
+    font-size: 40px;
     text-align: left;
 }
-.cover-tagline{
-    color: white;
-   
-   margin-left: 35px;
-   
+.cover-tagline{  
+    margin-top:55px ;  
 }
 
 .cover-options:hover{
@@ -33,47 +29,48 @@
     background-color: cornsilk;
     color: black;
 }
-.profile-picture{
-     box-shadow: 0px 1px 0px 0px tomato;
+.profile-picture {
+     box-shadow: 0px 1px 0px 0px gray;
      border-radius: 25%;
      height: 350px;
      width: 350px;
 }
 
 .picture-background{
-    height: 92%;
-    width: 92%;
+    height: 72%;
+    width: 72%;
     background-image: url('../../../images/profile-photo.jpg');
     background-size: cover;
-    border-radius: 25%;
+    border-radius: 20%;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 0 0 20px;
+    margin: 20px 50px;
 }
 
 .picture-background:hover{
     transform: scale(1.06);
     transition: 1s ease-in-out; 
 }
-.icons{
-    margin: 15px;
+
+.grid-btn{
+    margin-left: -10px;
 }
-.cover-icons , .resume-btn Button{
+.grid-btn button{
+    border-radius: 15px;
+    padding: 10px 18px;
+    margin: 10px ;
+    background-color: #28a745;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
     color: white;
-    margin-left: 35px;
-    padding: 5px 15px;
-    text-decoration: none;
-    background-color: steelblue;
-    border-radius: 5px;
-    margin-left: 22px;
-
 }
 
-.cover-icons i:hover{
-    transform: scale(1.5);
-}
-.icons-grid{
+.skills-title{
     display: flex;
-    justify-content: lef;
-    align-items: left;
+    margin-left: 5%;
+    justify-content:start;
+}
+.skills-title li{
+    padding-right: 5%;
 }

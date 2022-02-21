@@ -5,3 +5,27 @@
     background-color: black;
     border-radius: 5px;
 }
+.hor-div{
+    border: 1px solid rgba(128, 128, 128, 0.368);
+    margin: 10px;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.skill-img{
+    width: 95px;
+    text-align: center;
+    }
+.skill-img Typography{
+    font-size: 15px;
+    font-weight: 900;
+
+}
+.skill-img img{
+    width: 60px;
+    height: 60px;
+}
+

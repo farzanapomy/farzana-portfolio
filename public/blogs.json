@@ -1,20 +1,10 @@
 [
     {
         "id": 1,
-        "name": "VITAL PHOTOGRAPHY",
-        "img": "https://i.ibb.co/g3FdFLF/Vital-Photography.png",
-        "durationTime": "One day",
-        "features": [
-            "Build this website using react, react-route version 6 , firebase for Frontend and mongodb, NodeJs for backend.",
-            "By this website, users can add order any favorite service.",
-            "Also can add review with rating and can delete his unwanted order.",
-            "Here also implement admin panel.Admin can add new service, manage all orders and also make an admin for any other user.",
-            "If you use this website as a admin then please log in with email: admin@admin.com and password: 123456"
-        ],
-        "technology": "React, React Router ,Node.js,MongoDb, Swiper.js,Stripe,Axios,Material UI Firebase Authentication.",
-        "githubLink": "https://github.com/farzanapomy/vital-photography-client",
-        "ServerLink": "https://github.com/farzanapomy/vital-photography-server",
-        "liveLink": "https://vital-photography.web.app/"
+        "name": "Learn More about Javascript",
+        "img": "../src/images/blogs/javascript.png",
+        "des": "We know about some important topics from javascript ",
+        "devLink": "https://dev.to/farzanapomy/we-know-about-some-important-topics-from-javascript--57d6"
     },
     {
         "id": 3,

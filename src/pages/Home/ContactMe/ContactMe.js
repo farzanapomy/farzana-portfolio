@@ -1,9 +1,10 @@
-import { Button, Container, Grid, TextField } from '@mui/material';
+import { Button, Container, Grid, TextField, Typography } from '@mui/material';
 import React from 'react';
 import contact from '../../../images/contact.g.gif'
 import './ContactMe.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import contact2 from '../../../images/contact.jpg'
 const ContactMe = () => {
     React.useEffect(() => {
         AOS.init();
@@ -11,94 +12,68 @@ const ContactMe = () => {
 
     return (
         <Container data-aos="zoom-out" className='contact'>
-            <Grid container spacing={2} >
-                <Grid item xs={12} md={6} className='background' style={{ width: '5%', borderRadius: '15px', color: 'white' }}>
-                    <img src={contact} alt="" />
 
-                </Grid>
-                <Grid item xs={12} md={6}>
+            <div className='contact-form'>
+                {/* <img src={contact2} alt="" style={{ width: '75%', padding: '10px', borderRadius: '20px' }} /> */}
+                <Typography variant='h2' className='contact-text' sx={{ margin: '20px' }}>Contact me</Typography>
+                <form action="https://formsubmit.co/farzanapomy56@gmail.com" method="POST" >
 
-                    <form action="https://formsubmit.co/farzanapomy56@gmail.com" method="POST" >
-                        <TextField id="standard-basic"
-                            variant="standard"
-                            type="email"
-                            name="email"
-                            placeholder="Email Address"
-                            required
-                            sx={{ m: 1, backgroundColor: 'white', borderRadius: '10px', padding: '2% 15%' }}
-                        />
+                    <TextField id="standard-basic"
+                        variant="standard"
+                        type="text"
+                        name="name"
+                        placeholder='Write you name'
+                        className='text-field'
+                        sx={{ margin: '5px', padding: '8px', borderRadius: '5px' }}
+                        required />
 
-                        <TextField id="standard-basic"
-                            variant="standard"
-                            type="text"
-                            name="name"
-                            placeholder='Write you name'
-                            sx={{ m: 1, backgroundColor: 'white', borderRadius: '10px', padding: '2% 15%' }}
-                            required />
+                    <TextField id="standard-basic"
+                        variant="standard"
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        sx={{ margin: '5px', padding: '8px', borderRadius: '5px' }}
+                        required
+                        className='text-field'
+                    />
+                    <TextField id="standard-basic"
+                        variant="standard"
+                        type="text"
+                        name="number"
+                        placeholder="Your Phone Number"
+                        sx={{ margin: '5px', padding: '8px', borderRadius: '5px' }}
+                        required
+                        className='text-field'
+                    />
 
-                        <TextField id="standard-basic"
-                            variant="standard"
-                            type="message"
-                            name="message"
-                            placeholder="Write about your opinion"
-                            sx={{ m: 1, backgroundColor: 'white', borderRadius: '10px', padding: '2% 15%' }}
-                            required />
-                        <br />
-                        <Button
+                    <TextField id="standard-basic"
+                        variant="standard"
+                        type="message"
+                        name="message"
+                        placeholder="Write about your opinion"
+                        sx={{ margin: '5px', padding: '8px ', borderRadius: '5px' }}
+                        className='text-field'
+                        rows={4}
+                        multiline
+                        required />
+                    <br />
 
-                            sx={{ m: 1, backgroundColor: '#efead7', borderRadius: '10px', padding: '2% 15%' }}
-                            type="submit">
-                            Send
-                        </Button>
-                    </form>
-
-                </Grid>
-
-            </Grid>
-
+                    <button
+                        className='text-button'
+                        type="submit">
+                        Send
+                    </button>
+                </form>
 
 
+            </div>
 
-        </Container>
+
+
+        </Container >
 
     );
 };
 
 export default ContactMe;
 
-
-
-/*
-import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
-
-const ContactMe = () => {
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-            e.target.reset()
-    };
-
-    return (
-        <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-        </form>
-    );
-};
-
-export default ContactMe;
-*/

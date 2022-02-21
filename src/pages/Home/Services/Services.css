@@ -2,18 +2,8 @@
     padding: 5px;
     margin: 100px ;
     color: tomato;
-    /* display: inline; */
 }
 
-
-.service-img:hover{
-    transform: scale(1.90);
-    transition: 3s ease-in-out; 
-}
-
-/* .service-card{
-    padding: 115px;
-} */
 
 .high-text{
     font-size: 70px;
@@ -22,13 +12,6 @@
     
 }
 
-.service-card:hover{
-    /* background-color: springgreen;
-    padding: 100; */
-    color: tomato;
-    /* background-color: rgba(255, 255, 0, 0.493); */
-    
-}
 .service-container{
     margin-bottom: 100px;
 }
