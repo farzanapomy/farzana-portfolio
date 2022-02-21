@@ -1,10 +1,11 @@
-import { Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
+import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import './Blog.css'
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     useEffect(() => {
-        fetch('/blogs.json')
+        fetch('./blogs.json')
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
@@ -12,9 +13,9 @@ const Blogs = () => {
     return (
         <Container className='service-container'>
             <h1 className='high-text' data-aos="zoom-out-down">My Blogs</h1>
-            {
-                blogs.map(blog =>
-                    <Grid container spacing={2} >
+            <Grid container spacing={2} >
+                {
+                    blogs.map(blog =>
                         <Grid item xs={12} md={4} data-aos="zoom-out-left" className='service-card'>
                             <Card data-aos="fade-up-left" >
                                 <CardMedia className='service-img'
@@ -24,20 +25,25 @@ const Blogs = () => {
                                     image={blog.img}
 
                                 />
-                                <CardContent sx={{ backgroundColor: 'black', color: 'white' }}>
-                                    <Typography gutterBottom variant="h5" component="Container">
-                                        Web Development
+                                <CardContent className='blog-card'>
+                                    <Typography variant="h5" component="Container">
+                                        {blog.name}
                                     </Typography>
                                     <Typography variant="body2" >
-                                        I have such a beautiful projects based full stack.
+                                        {blog.des}
                                     </Typography>
+                                    <Box className='blog-btn'>
+                                        <button>
+                                            <a href={blog.devLink}>Read More</a>
+                                        </button>
+                                    </Box>
                                 </CardContent>
+
                             </Card>
                         </Grid>
-                    </Grid>
+                    )}
 
-                )}
-
+            </Grid>
         </Container>
     );
 };

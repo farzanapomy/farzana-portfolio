@@ -2,38 +2,22 @@
     {
         "id": 1,
         "name": "Learn More about Javascript",
-        "img": "../src/images/blogs/javascript.png",
-        "des": "We know about some important topics from javascript ",
+        "img": "https://www.w3docs.com/uploads/media/default/0001/05/4482fe09d95a0be765154b9cefff5e07f7fc32ff.png",
+        "des": "In here We know about some topics of javascript. As like Scope, window, Global variable, Closure and Encapsulation, “this” Keyword,  event loop, asynchronous behavior.",
         "devLink": "https://dev.to/farzanapomy/we-know-about-some-important-topics-from-javascript--57d6"
     },
     {
-        "id": 3,
-        "name": "Mr. Puppies",
-        "img": "https://i.ibb.co/6Y67c9F/Mr-puppy-com.png",
-        "durationTime": "One day",
-        "features": [
-            "Build this project on a full stack niche website. From this website, users can buy a suitable carrier for their puppies.",
-            "User can order any product, also can delete the unwanted product and be able to give review with a rating.",
-            "Admin can add or delete any products. And control the full website by the dashboard.Admin email: admin@admin.com || Password: 123456."
-        ],
-        "technology": "Built this website using React, React Router , Firebase Authentication.",
-        "githubLink": "https://github.com/farzanapomy/mr-warm-puppies-client-side",
-        "ServerLink": "https://github.com/farzanapomy/mr-warm-puppies-server-side",
-        "liveLink": "https://mr-warm-puppies.web.app/"
+        "id": 2,
+        "name": "Explore react some topics in react",
+        "img": "https://www.datocms-assets.com/14946/1638186862-reactjs.png?auto=format",
+        "des": "We know about some topics of React.As Like state, props, Lifecycle, Mounting, Updating, Unmounting, Virtual DOM and diffing- algorithm.",
+        "devLink": "https://dev.to/farzanapomy/explore-react-some-topics-in-react-5b2d"
     },
     {
-        "id": 2,
-        "name": "Nexzen Tourism",
-        "img": "https://i.ibb.co/WnrCD52/next-Zen-com.png",
-        "durationTime": "One day",
-        "features": [
-            "This project is about mental health services based on React.",
-            "User can read all articles and check the price of all services by login.",
-            "User can register and login with email and password or sign in with Google. Also can reset forgotten password"
-        ],
-        "technology": "Built this website using React, React Router , Firebase Authentication.",
-        "githubLink": "https://github.com/farzanapomy/tourism-website-client-side",
-        "serverLink": "https://github.com/farzanapomy/tourism-website-server-side",
-        "liveLink": "https://tourism-website-58422.web.app/"
+        "id": 3,
+        "name": "This article is all about media queries",
+        "img": "https://webdevpuneet.com/wp-content/uploads/2020/10/css-media-queries-1.png",
+        "des": "Media queries are used to modify our website based on devices.it means media queries are used for responsive our web page by CSS properties as screen resolution and viewport width",
+        "devLink": "https://dev.to/farzanapomy/this-article-is-all-about-media-queries-2m9p"
     }
 ]

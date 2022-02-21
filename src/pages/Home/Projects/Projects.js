@@ -34,7 +34,6 @@ const Projects = () => {
                                 className='project-card'
                                
                             >
-
                                 <img
                                     className='card-img'
                                     height="200"
