@@ -5,7 +5,7 @@
         "img": "https://i.ibb.co/g3FdFLF/Vital-Photography.png",
         "durationTime": "One day",
         "features": [
-            "Build this website using react, react-route version 6 , firebase for Frontend and mongodb, NodeJs for backend.",
+            "Build this website using react, react-route version 6, firebase for Frontend and mongodb, NodeJs for backend.",
             "By this website, users can add order any favorite service.",
             "Also can add review with rating and can delete his unwanted order.",
             "Here also implement admin panel.Admin can add new service, manage all orders and also make an admin for any other user.",

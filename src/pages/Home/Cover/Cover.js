@@ -85,9 +85,10 @@ const Cover = () => {
                         </li>
                     </Box>
 
-                    <Box className="cover-role">
-                        <span className='cover-tagline'>
-                            I am from bangladesh. I am studying Computer Science and Engineering in Port City International University.A self-motivated and enthusiastic web developer.I am comfortable to build a Front and back-end side projects.I build several Full stack projects
+                    <Box className="cover-role" sx={{ fontSize: 18, marginBottom: '10px' }}>
+                        <span className='cover-tagline' >
+                            I am a self-motivated web developer. Always try to learn new technologies. Dream to work in the software industry and want to do something for Bangladesh.
+
                         </span>
                         <Box className='grid-btn' >
 
@@ -96,7 +97,7 @@ const Cover = () => {
                                     <button>About me</button>
                                 </Link>
                                 <React.Fragment >
-                                    <button className='resume-btn'><a href="FarzanaResume.pdf" download='FarzanaResume.pdf'>
+                                    <button className='resume-btn'><a href="Farzana_Resume.pdf" download='Farzana_Resume.pdf'>
                                         Resume
                                     </a></button>
                                 </React.Fragment>

@@ -31,35 +31,35 @@ const About = () => {
 
             <Grid container spacing={2} data-aos="zoom-in" sx={{ margin: '10px 0px 35px 0px' }}>
                 <Grid item md={4} >
-                    <Typography variant="h4" sx={{ textAlign: 'left' }}>
+                    <Typography variant="h4" sx={{ textAlign: 'left', color: '#64ffdbaf' }}>
                         About me
                     </Typography>
                 </Grid>
+                <div className='hor-div'></div>
+
                 <Grid item md={7}>
                     <CardContent sx={{ minWidth: 275 }} style={{ textAlign: "left" }}>
                         <Typography sx={{ fontSize: '20px' }} >
                             Hello There !!
                         </Typography>
                         <Typography sx={{ fontSize: 18 }}>
-                            My name is Farzana Pomy.I am from bangladesh.
-                            I am studying Computer Science & Engineering in Port City International University.
-                            I am comfortable to build a Front and back-end side <Link style={{ textDecoration: "underline" }} to='/projects'>projects</Link>.I build several Full stack projects. Maybe I'm the person whose you are looking for ....
+                            My name is Farzana Pomy.I am from Bangladesh. I am studying Computer Science & Engineering at Port City International University. I am comfortable building Front and back-end side. I build several Full-stack <Link sx={{ textDecoration: "underline" }} to='/projects'>projects</Link>. Maybe I'm the person whose you are looking for ....
                         </Typography>
                     </CardContent>
 
                 </Grid>
             </Grid>
 
-            <div className='hor-div'></div>
 
             {/* education */}
 
             <Grid container spacing={2} data-aos="zoom-in" sx={{ marginBottom: '35px' }}>
                 <Grid item md={4} sx={{ marginTop: '15px' }}>
-                    <Typography variant="h4" sx={{ textAlign: 'left' }}>
+                    <Typography variant="h4" sx={{ textAlign: 'left', color: '#64ffdbaf' }}>
                         Education
                     </Typography>
                 </Grid>
+                <div className='hor-div'></div>
 
                 <Grid item md={7}>
                     <CardContent sx={{ minWidth: 275 }} style={{ textAlign: "left" }}>
@@ -74,17 +74,17 @@ const About = () => {
                     </CardContent>
                 </Grid>
             </Grid>
-            <div className='hor-div'></div>
+
 
             {/* skills  */}
 
             <Grid container spacing={2} data-aos="zoom-in" sx={{ margin: '35px 0px' }}>
                 <Grid item md={4} >
-                    <Typography variant="h4" sx={{ textAlign: 'left' }}>
+                    <Typography variant="h4" sx={{ textAlign: 'left', color: '#64ffdbaf' }}>
                         Skills
                     </Typography>
                 </Grid>
-
+                <div className='hor-div'></div>
                 <Grid item md={7} sx={{ margin: '35px' }}>
                     <Box className='img-container' data-aos="zoom-out" >
                         <Box className='skill-img'>
@@ -134,16 +134,15 @@ const About = () => {
                     </Box>
                 </Grid>
             </Grid>
-            <div className='hor-div'></div>
 
             {/* training */}
             <Grid container spacing={2} data-aos="zoom-in" sx={{ marginBottom: '35px' }}>
                 <Grid item md={4} sx={{ marginTop: '15px' }}>
-                    <Typography variant="h5" sx={{ textAlign: 'left' }}>
+                    <Typography variant="h5" sx={{ textAlign: 'left', color: '#64ffdbaf' }}>
                         Professional Training
                     </Typography>
                 </Grid>
-
+                <div className='hor-div'></div>
                 <Grid item md={7} sx={{ marginTop: '15px', marginBottom: '15px' }}>
                     <Typography sx={{ fontSize: '15px', textAlign: 'left' }}>
                         <Typography sx={{ fontSize: '20px', fontWeight: 900, textAlign: 'left' }}>

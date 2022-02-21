@@ -56,10 +56,10 @@ const SingleProject = () => {
                     </Typography>
 
                     <button className="link-btn">
-                        <a style={{ textDecoration: 'none' }} href={findProject[0]?.liveLink}>Live link</a> {" "}
+                        <a style={{ textDecoration: 'none', color: 'black' }} href={findProject[0]?.liveLink}>Live link</a> {" "}
                     </button> {" "}
                     <button className="link-btn">
-                        <a style={{ textDecoration: 'none' }} href={findProject[0]?.githubLink}>Github link</a>
+                        <a style={{ textDecoration: 'none', color: 'black' }} href={findProject[0]?.githubLink}>Github link</a>
                     </button>
 
 

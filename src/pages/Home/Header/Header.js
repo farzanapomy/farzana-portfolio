@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@mui/styles';
-import { Drawer, ListItemText, useTheme } from '@mui/material';
+import { Container, Drawer, ListItemText, useTheme } from '@mui/material';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
@@ -76,49 +76,51 @@ const Header = () => {
 
 
   return (
-    <div data-aos="zoom-out-down" >
-      <AppBar position="static" sx={{ flexGrow: 1, backgroundColor: 'black', mb: 2 }} >
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            className={navIcon}
-            onClick={() => setState(true)}
-          >
-            <MenuIcon />
-          </IconButton>
+    <div data-aos="zoom-out-down" style={{ boxShadow: '0px 1px 15px 0px #64ffdbaf' }}>
+      <AppBar position="static" sx={{ flexGrow: 1, backgroundColor: '#64ffdbaf', mb: 5 }} >
+        <Container>
+          <Toolbar>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+              className={navIcon}
+              onClick={() => setState(true)}
+            >
+              <MenuIcon />
+            </IconButton>
 
-          <Link className={navItem} to='/home' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-            <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1, marginRight: 90 }}>
-              Farzana Pomy
-            </Typography>
-          </Link>
+            <Link className={navItem} to='/home' style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }}>
+              <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1, marginRight: 90 }}>
+                Farzana Pomy
+              </Typography>
+            </Link>
 
 
 
-          <Box>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center' } }}>
+            <Box>
+              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'center', } }}>
 
-              <Link className={navItem} to='/projects' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-                My Project
-              </Link>
+                <Link className={navItem} to='/projects' style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }}>
+                  My Project
+                </Link>
 
-              <Link className={navItem} to='/ContactMe' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-                Contact Me
-              </Link>
-              <Link className={navItem} to='/blogs' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-                Blogs
-              </Link>
-              <Link className={navItem} to='about' style={{ color: 'white', paddingRight: '10px', textDecoration: 'none' }}>
-                About
-              </Link>
+                <Link className={navItem} to='/ContactMe' style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }}>
+                  Contact Me
+                </Link>
+                <Link className={navItem} to='/blogs' style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }}>
+                  Blogs
+                </Link>
+                <Link className={navItem} to='about' style={{ color: 'black', paddingRight: '10px', textDecoration: 'none' }}>
+                  About
+                </Link>
+              </Box>
             </Box>
-          </Box>
 
-        </Toolbar>
+          </Toolbar>
+        </Container>
       </AppBar>
 
       <div>

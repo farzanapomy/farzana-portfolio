@@ -2,7 +2,7 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { Container, Grid } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Projects.css'
 
@@ -23,7 +23,7 @@ const Projects = () => {
 
     return (
         <Container className='project-container'>
-            <h1>My Projects</h1>
+            <h1 data-aos="zoom-out-down">My Projects</h1>
 
             <Grid container spacing={2} >
                 {
@@ -32,7 +32,6 @@ const Projects = () => {
                             key={project.id}>
                             <div data-aos="zoom-in"
                                 className='project-card'
-                               
                             >
                                 <img
                                     className='card-img'
@@ -40,16 +39,20 @@ const Projects = () => {
                                     src={project.img}
                                     alt="Paella dish"
                                 />
-                                <div className='border-card'>
+                                <Box className='border-card' >
 
-                                    <Typography variant='h5'>{project.name}</Typography>
-                                    <div>
-                                        <Typography variant="body2" >
-                                            {project.features.slice(0, 2)}
+                                    <Typography variant='h5' sx={{ color: 'white', marginBottom: '5px' }}>{project.name}</Typography>
+                                    <div >
+                                        <Typography variant="body6" >
+                                            {project.features.slice(0, 1)}
+                                        </Typography>
+                                        <Typography variant="body6" >
+                                            <Typography variant='h6' sx={{ color: 'white', margin: '5px 0px ' }}> Technologies :
+                                            </Typography> {project.technology}
                                         </Typography>
                                     </div>
                                     <br />
-                                </div>
+                                </Box>
 
                                 <Link to={`/projects/${project.id}`} style={{ color: 'black', paddingRight: ' 10px 20px', textDecoration: 'none', }}>
                                     <button className='project-btn'>Full Project</button>

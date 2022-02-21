@@ -1,10 +1,10 @@
 .project-container{
-    margin: 50px 0px;
+    margin: 110px 0px;
 }
 .project-container h1{
-    font-size: 60px;
-    color: beige;
-    margin: 50px auto;
+    font-size: 50px;
+    color: #64ffdbaf;
+    text-align: left;
 }
 
 .card-img{
@@ -17,16 +17,17 @@
     border: 1px solid gray;
     margin: 15px;
     padding: 20px;
-    height: 450px;
-   
+    height: 510px;
 }
+
+
 .border-card{
     text-align: left;
     
 }
 .project-btn{
     padding: 10px 30px;
-    background-image: linear-gradient(#28a745,#28a7467e);
+    background-color: #64ffdbaf;
     border-radius: 10px;
     margin: 10px;
     cursor: pointer;

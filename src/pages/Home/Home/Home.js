@@ -1,22 +1,19 @@
 import React from 'react';
-import Particles from "react-tsparticles";
-
-import About from '../About/About';
 import Cover from '../Cover/Cover';
 import Projects from '../Projects/Projects';
-import ContactMe from '../ContactMe/ContactMe';
 import Services from '../Services/Services';
 import { Container } from '@mui/material';
+import Blogs from '../Blogs/Blogs';
 
 
 const Home = () => {
-    const particlesInit = (main) => {
-        console.log(main);
-    };
+    // const particlesInit = (main) => {
+    //     console.log(main);
+    // };
 
-    const particlesLoaded = (container) => {
-        console.log(container);
-    };
+    // const particlesLoaded = (container) => {
+    //     console.log(container);
+    // };
     return (
 
 
@@ -24,7 +21,7 @@ const Home = () => {
             <Cover></Cover>
             <Projects></Projects>
             <Services></Services>
-            <ContactMe></ContactMe>
+            <Blogs></Blogs>
         </Container>
 
 

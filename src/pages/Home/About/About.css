@@ -6,8 +6,9 @@
     border-radius: 5px;
 }
 .hor-div{
+    width: 75%;
     border: 1px solid rgba(128, 128, 128, 0.368);
-    margin: 10px;
+    margin-left: 25%;
 }
 
 .img-container{

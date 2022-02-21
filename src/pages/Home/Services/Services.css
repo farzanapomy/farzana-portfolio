@@ -1,15 +1,7 @@
 .high-text{
-    padding: 5px;
-    margin: 100px ;
-    color: tomato;
-}
-
-
-.high-text{
-    font-size: 70px;
-    color: beige;
-    margin: 50px auto;
-    
+    font-size: 50px;
+    color: #64ffdbaf;
+    text-align: left;
 }
 
 .service-container{

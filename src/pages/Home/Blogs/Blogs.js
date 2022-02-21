@@ -26,13 +26,14 @@ const Blogs = () => {
 
                                 />
                                 <CardContent className='blog-card'>
-                                    <Typography variant="h5" component="Container">
+                                    <Typography variant="h5" component="Container"
+                                    >
                                         {blog.name}
                                     </Typography>
-                                    <Typography variant="body2" >
+                                    <Typography sx={{ margin: '22px 0px', fontSize: '14px' }} >
                                         {blog.des}
                                     </Typography>
-                                    <Box className='blog-btn'>
+                                    <Box className='blog-btn' sx={{ color: 'black' }}>
                                         <button>
                                             <a href={blog.devLink}>Read More</a>
                                         </button>

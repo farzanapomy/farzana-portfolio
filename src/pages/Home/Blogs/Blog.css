@@ -1,17 +1,23 @@
 .blog-btn button{
     padding: 10px 30px;
-    background-image: linear-gradient(#28a745,#28a7467e);
+    background-color: #64ffdbaf;
     border-radius: 10px;
     margin: 10px;
-    margin-top: 60px;
     cursor: pointer;
     border: none;
     font-weight: 600;
 }
+
+
 .blog-card{
     background-color: rgb(23, 42, 69);
-    height: 250px;
-    line-height: 25px;
+    height: 300px;
     text-align: left;
     color: #fff;
+}
+
+.high-text{
+    font-size: 50px;
+    color: #64ffdbaf;
+    text-align: left;
 }

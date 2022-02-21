@@ -1,6 +1,5 @@
-import { Button, Container, Grid, TextField, Typography } from '@mui/material';
+import { Container, TextField, Typography } from '@mui/material';
 import React from 'react';
-import contact from '../../../images/contact.g.gif'
 import './ContactMe.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -15,7 +14,7 @@ const ContactMe = () => {
 
             <div className='contact-form'>
                 {/* <img src={contact2} alt="" style={{ width: '75%', padding: '10px', borderRadius: '20px' }} /> */}
-                <Typography variant='h2' className='contact-text' sx={{ margin: '20px' }}>Contact me</Typography>
+                <Typography variant='h2' sx={{ margin: '20px', color: '#64ffdbaf' }}>Contact me</Typography>
                 <form action="https://formsubmit.co/farzanapomy56@gmail.com" method="POST" >
 
                     <TextField id="standard-basic"
