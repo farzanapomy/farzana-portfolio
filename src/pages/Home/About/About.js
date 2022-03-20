@@ -14,7 +14,6 @@ import git from '../../../images/skills/git.png'
 import firebase from '../../../images/skills/firebase.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
 import './About.css'
 
 
